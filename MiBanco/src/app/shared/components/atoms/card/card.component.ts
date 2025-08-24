@@ -1,10 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component, ContentChild, Input, OnInit, TemplateRef } from '@angular/core';
-import { MatCardModule } from '@angular/material/card';
+import { Component, ContentChild, Input, TemplateRef } from '@angular/core';
 
 @Component({
   selector: 'app-card',
-  imports: [MatCardModule, CommonModule],
+  imports: [CommonModule],
   templateUrl: './card.component.html',
   styleUrl: './card.component.sass'
 })

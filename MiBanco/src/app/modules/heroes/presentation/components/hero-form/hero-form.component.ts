@@ -1,11 +1,10 @@
-import { Component, EventEmitter, inject, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, inject, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
 import { HERO_FORM, HERO_FORM_IMPORTS } from './hero-form.component.constant';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ButtonType } from '@app/shared/components/atoms/button/button.interface';
-import { Hero, HeroForm } from '@app/modules/heroes/domain/dto/heroes.dto';
+import { HeroForm } from '@app/modules/heroes/domain/dto/heroes.dto';
 import { Router } from '@angular/router';
 import { HEROE_ROUTE_NAMES_GLOBAL } from '@app/modules/heroes/heroes.routenames';
-import { MatSnackBar } from '@angular/material/snack-bar';
 import { SnackbarComponent } from '@app/shared/components/atoms/snackbar/snackbar.component';
 import { ModalMessageService } from '@app/shared/services/modal-message.service';
 import { MODAL_MESSAGES } from '@app/core/dictionaries/messages/messages-crud';
@@ -27,7 +26,7 @@ export class HeroFormComponent implements OnChanges {
 	readonly HERO_FORM = HERO_FORM;
   readonly buttonType = ButtonType;
 	private router = inject(Router);
-  private snackBar = inject(MatSnackBar);
+  // private snackBar = inject(MatSnackBar);
   private modalService = inject(ModalMessageService);
 
   formGroup!: FormGroup;
@@ -43,10 +42,10 @@ export class HeroFormComponent implements OnChanges {
 	}
 
   openSnackBar(text: string) {
-    this.snackBar.openFromComponent(SnackbarComponent, {
-      duration: 2000,
-      data: { message: text}
-    });
+    // this.snackBar.openFromComponent(SnackbarComponent, {
+    //   duration: 2000,
+    //   data: { message: text}
+    // });
   }
 
   clickBtnCancel() {

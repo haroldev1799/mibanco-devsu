@@ -1,22 +1,19 @@
-<mat-card appearance="outlined">
-  <mat-card-header>
-    @if(customHeader){
-        <ng-container *ngTemplateOutlet="customHeader"></ng-container>
-    } @else {
-        <mat-card-title *ngIf="title">{{title}}</mat-card-title>
-        <mat-card-subtitle *ngIf="subTitle">{{subTitle}}</mat-card-subtitle>
-    }
-  </mat-card-header>
+<div class="card">
+  @if(customHeader){
+    <div class="card__header">
+          <ng-container *ngTemplateOutlet="customHeader"></ng-container>
+    </div>
+  } 
 
   @if(customContent){
-    <mat-card-content>
-      <ng-container *ngTemplateOutlet="customContent"></ng-container>
-    </mat-card-content>
+    <div class="card__content">
+      <p>Contenido del card.</p>
+    </div>
   }
-
+  
   @if(customActions){
-    <mat-card-actions [classList]="customActionsClass">
-      <ng-container *ngTemplateOutlet="customActions"></ng-container>
-    </mat-card-actions>
+    <div class="card__footer">
+      <button>Acción</button>
+    </div>
   }
-</mat-card>
+</div>
