@@ -1,6 +1,5 @@
 <div class="flex flex-column gap-1">
-  <mat-form-field class="w-full" hideRequiredMarker>
-    <mat-label>{{label}}</mat-label>
+    {{label}}
     <input
         [type]="type"
         [name]="name"
@@ -39,6 +38,4 @@
       />
     </ng-template>
 
-    <mat-error *ngIf="firstErrorMessage">{{ firstErrorMessage }}</mat-error>
-  </mat-form-field>
 </div>

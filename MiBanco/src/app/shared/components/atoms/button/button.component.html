@@ -1,5 +1,4 @@
 <button
-	mat-raised-button
 	(click)="onClicked($event)"
 	[disabled]="disabled"
 	[type]="type"
@@ -13,7 +12,6 @@
 		padding: data?.style?.padding ?? '',
 		boxSizing: data?.style?.boxSizing ?? '',
 	}"
-	[color]="severity"
 >
 	@if (data && !!data.img) {
 		<img [src]="'assets/svg/buttons' + data.img" [alt]="data.img" loading="lazy" />
