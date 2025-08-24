@@ -1,0 +1,52 @@
+<div class="modal-message-ref">
+	<div class="modal-contend-contend">
+		@if (dataModal?.icon) {
+			<i class="pi pi-{{ dataModal?.icon }} text-6xl"></i>
+		}
+
+		@if (dataModal?.imgIcon) {
+			<img
+				[src]="'assets/svg/' + dataModal?.imgIcon"
+				loading="lazy"
+				[alt]="dataModal?.imgIcon"
+				[width]="dataModal?.widthImg ?? 55"
+				class="mb-1"
+			/>
+		}
+
+		@if (dataModal?.title) {
+			<h3 [innerHTML]="dataModal?.title"></h3>
+		}
+
+		@if (dataModal?.message) {
+			<p [innerHTML]="dataModal?.message ?? '--'"></p>
+		}
+	</div>
+	@if (!!dataModal?.buttonText && !dataModal?.buttonTextSecondary) {
+		<div class="modal-contend-footer" [ngClass]="dataModal?.classesButtons ?? ''">
+			<app-button [isFullWidth]="true" [label]="dataModal?.buttonText" (clicked)="clickBtnAction()"></app-button>
+			@if (!!dataModal?.buttonTextSecondary) {
+				<app-button
+					severity="light"
+					[label]="dataModal?.buttonTextSecondary"
+					(clicked)="clickBtnSecondary()"
+				></app-button>
+			}
+		</div>
+	}
+
+	@if (!!dataModal?.buttonText && !!dataModal?.buttonTextSecondary) {
+		<div class="modal-contend-footer" [ngClass]="dataModal?.classesButtons ?? 'flex flex-wrap gap-4'">
+			<app-button
+				[label]="dataModal?.buttonText"
+				(clicked)="clickBtnAction()"
+				[data]="{ style: { minWidth: '98px' } }"
+			></app-button>
+			<app-button
+				severity="light"
+				[label]="dataModal?.buttonTextSecondary"
+				(clicked)="clickBtnSecondary()"
+			></app-button>
+		</div>
+	}
+</div>

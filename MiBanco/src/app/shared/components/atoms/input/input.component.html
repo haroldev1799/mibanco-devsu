@@ -1,0 +1,44 @@
+<div class="flex flex-column gap-1">
+  <mat-form-field class="w-full" hideRequiredMarker>
+    <mat-label>{{label}}</mat-label>
+    <input
+        [type]="type"
+        [name]="name"
+        [id]="inputId"
+        [formControl]="control"
+        matInput
+        appTrimInput
+        appUppercaseInput
+        [placeholder]="placeholder"
+        [maxLength]="maxLength"
+        [autocomplete]="autocomplete"
+        (keyup.enter)="enterInput()"
+        [ngClass]="{
+            invalid: labelError,
+        }"
+        *ngIf="type !== 'number'; else numberInput"
+    />
+    <ng-template #numberInput>
+      <input
+        [type]="type"
+        [name]="name"
+        [id]="inputId"
+        [formControl]="control"
+        matInput
+        appTrimInput
+        appNumberRange
+        [placeholder]="placeholder"
+        [maxLength]="maxLength"
+        [autocomplete]="autocomplete"
+        (keyup.enter)="enterInput()"
+        [min]="min ?? 0"
+        [max]="max ?? 999999"
+        [ngClass]="{
+            invalid: labelError,
+        }"
+      />
+    </ng-template>
+
+    <mat-error *ngIf="firstErrorMessage">{{ firstErrorMessage }}</mat-error>
+  </mat-form-field>
+</div>

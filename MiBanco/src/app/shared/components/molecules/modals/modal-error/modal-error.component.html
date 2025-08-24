@@ -1,0 +1,29 @@
+<h2 mat-dialog-title>{{data.title}}</h2>
+<mat-dialog-content>
+	@if (data.icon) {
+		<i class="pi pi-{{ data.icon }} text-6xl"></i>
+	}
+
+	@if (data.imgIcon) {
+		<img
+			[src]="'assets/svg/modals' + data.imgIcon"
+			loading="lazy"
+			[alt]="data.imgIcon"
+			[width]="data.widthImg ?? 55"
+			class="mb-1"
+		/>
+	}
+
+	@if (data.title) {
+		<h3 [innerHTML]="data.title"></h3>
+	}
+
+	@if (data.message) {
+		<p [innerHTML]="data.message"></p>
+	}
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button [mat-dialog-close] (click)="clickBtnAction()" color="primary" cdkFocusInitial>Cerrar</button>
+  <button mat-flat-button (click)="clickBtnAction()" color="primary">Basic</button>
+</mat-dialog-actions>
+

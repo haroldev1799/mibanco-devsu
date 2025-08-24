@@ -1,0 +1,23 @@
+<button
+	mat-raised-button
+	(click)="onClicked($event)"
+	[disabled]="disabled"
+	[type]="type"
+	[id]="buttonId"
+	[style]="{
+		width: isFullWidth ? '100%' : (data?.style?.width ?? 'auto'),
+		minWidth: data?.style?.minWidth ?? 'auto',
+		height: data?.style?.height ?? '2.5rem',
+		fontSize: data?.style?.fontSize ?? '0.875rem',
+		borderRadius: data?.style?.borderRadius ?? '0.25rem',
+		padding: data?.style?.padding ?? '',
+		boxSizing: data?.style?.boxSizing ?? '',
+	}"
+	[color]="severity"
+>
+	@if (data && !!data.img) {
+		<img [src]="'assets/svg/buttons' + data.img" [alt]="data.img" loading="lazy" />
+	} @else {
+		{{label}}
+	}
+</button>

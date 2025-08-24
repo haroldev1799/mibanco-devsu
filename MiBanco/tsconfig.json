@@ -1,0 +1,40 @@
+/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
+/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@app/*": ["src/app/*"],
+			"@core/*": ["src/app/core/*"],
+			"@domain/*": ["src/app/domain/*"],
+			"@infrastructure/*": ["src/app/infrastructure/*"],
+			"@layout/*": ["src/app/layout/*"],
+			"@components/*": ["src/app/shared/components/*"],
+			"@shared/*": ["src/app/shared/*"],
+			"@assets/*": ["src/assets/*"],
+			"@modules/*": ["src/app/modules/*"],
+			"@environmet/*": ["src/environments/*"]            // opcional si quieres usar 'src/...'
+    },
+    "outDir": "./dist/out-tsc",
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "bundler",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022"
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}
