@@ -1,0 +1,45 @@
+.scroll-y
+    &::-webkit-scrollbar
+        -webkit-appearance: none
+
+    &::-webkit-scrollbar:vertical
+        width: 10px
+
+    &::-webkit-scrollbar:horizontal
+        height: 10px
+    
+    &::-webkit-scrollbar-button:increment,
+    &::-webkit-scrollbar-button
+        display: none
+
+    &::-webkit-scrollbar-thumb
+        background-color:  #a8a8a8
+        border-radius: 100px
+    &::-webkit-scrollbar-track
+        background-color: var(--white) !important
+        -webkit-box-shadow: none !important
+
+
+.scroll-y-thin
+    &::-webkit-scrollbar
+        width: 0.3rem
+        max-height: 10rem
+        cursor: pointer
+
+    &::-webkit-scrollbar-track
+        background: var(--surface-surface-brand-secondary)
+
+    &::-webkit-scrollbar-thumb
+        background: var(--primary-600)
+        border-radius: 0.5rem
+
+.scroll-x
+    &::-webkit-scrollbar
+        height: 0.3rem
+
+    &::-webkit-scrollbar-track
+        background: var(--surface-surface-brand-secondary)
+
+    &::-webkit-scrollbar-thumb
+        background: var(--primary-600)
+        border-radius: 0.375rem

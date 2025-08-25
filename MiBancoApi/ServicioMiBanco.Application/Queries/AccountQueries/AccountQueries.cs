@@ -32,7 +32,7 @@ namespace ServicioMiBanco.Application.Queries.AccountQueries
                 connection.Open();
                 var param = new DynamicParameters();
                 param.Add("@AccountNumberId", id, DbType.Int64);
-                var result = await connection.QueryFirstAsync<AccountViewModel>(@"[dbo].[ACCOUNT_GET_BY_ID]", param, commandType: CommandType.StoredProcedure);
+                var result = await connection.QueryFirstOrDefaultAsync<AccountViewModel>(@"[dbo].[ACCOUNT_GET_BY_ID]", param, commandType: CommandType.StoredProcedure);
                 return result;
             }
         }

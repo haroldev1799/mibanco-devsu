@@ -1,10 +1,9 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { MENU_IMPORTS } from './menu.component.constant';
 import { MenuData } from './menu.interface';
 
 @Component({
   selector: 'app-menu',
-  imports: [...MENU_IMPORTS],
+  imports: [],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.sass'
 })

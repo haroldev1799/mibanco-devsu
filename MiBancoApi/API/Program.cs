@@ -38,15 +38,16 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     options.RequireHttpsMetadata = false;
     options.Audience = builder.Configuration["STS:API_SCOPE"];
 });
-builder.Services.AddMediatR(cfg =>
-{
-    cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
-});
+//builder.Services.AddMediatR(cfg =>
+//{
+//    cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
+//});
 
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 builder.Host.ConfigureContainer<ContainerBuilder>(container =>
 {
     //container.RegisterModule(new MediatorModule());
+    container.RegisterModule(new MediatorModule());
     container.RegisterModule(new CommandsModule());
     container.RegisterModule(new ServicesModule());
     container.RegisterModule(new ValidatorModule());

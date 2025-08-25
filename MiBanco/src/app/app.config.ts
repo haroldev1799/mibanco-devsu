@@ -1,14 +1,14 @@
 import { ApplicationConfig, LOCALE_ID, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
-import { HeroesProviders } from './modules/heroes/heroes.providers';
 import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { HttpErrorInterceptor } from './core/interceptors/interceptor-error';
 import { HttpAuthInterceptor } from './core/interceptors/interceptor-http';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { ClientProviders } from './modules/client/client.providers';
 
 const providers = [
-  ...HeroesProviders
+  ...ClientProviders
 ];
 
 export const appConfig: ApplicationConfig = {

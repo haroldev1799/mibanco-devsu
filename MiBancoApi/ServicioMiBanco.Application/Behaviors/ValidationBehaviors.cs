@@ -5,7 +5,7 @@ using ServicioMiBanco.Domain.Core.Exceptions;
 namespace ServicioMiBanco.Application.Behaviors
 {
     public class ValidatorBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
-       where TRequest : notnull
+    where TRequest : notnull
     {
         private readonly IEnumerable<IValidator<TRequest>> _validators;
 
@@ -25,15 +25,15 @@ namespace ServicioMiBanco.Application.Behaviors
 
                 var failures = _validators
                     .Select(v => v.Validate(context))
-                    .SelectMany(r => r.Errors)
+                    .SelectMany(result => result.Errors)
                     .Where(f => f != null)
                     .ToList();
 
                 if (failures.Any())
                 {
                     throw new ServicioMiBancoDomainException(
-                        $"Command Validation Errors for type {typeof(TRequest).Name}",
-                        new ValidationException("Validation exception", failures));
+                        $"Validation errors for {typeof(TRequest).Name}",
+                        new ValidationException(failures));
                 }
             }
 

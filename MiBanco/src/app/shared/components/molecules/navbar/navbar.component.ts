@@ -1,9 +1,8 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { LAYOUT_IMPORTS } from './navbar.component.constants';
 
 @Component({
   selector: 'app-navbar',
-  imports: [...LAYOUT_IMPORTS],
+  imports: [],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.sass'
 })

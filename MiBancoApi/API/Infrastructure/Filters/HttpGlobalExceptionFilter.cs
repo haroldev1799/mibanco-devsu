@@ -24,7 +24,20 @@ namespace ServicioMiBanco.API.Infrastructure.Filters
                 context.Exception,
                 context.Exception.Message);
 
-            if (context.Exception.GetType() == typeof(ServicioMiBancoDomainException))
+            if (context.Exception is FluentValidation.ValidationException validationException)
+            {
+                var errors = validationException.Errors.Select(x => x.ErrorMessage).ToArray();
+
+                var json = new JsonErrorResponse
+                {
+                    Messages = errors,
+                    MessageType = NotificationMessageType.FORMFIELDS
+                };
+
+                context.Result = new BadRequestObjectResult(json);
+                context.HttpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+            }
+            else if (context.Exception.GetType() == typeof(ServicioMiBancoDomainException))
             {
                 JsonErrorResponse json;
                 var innerException = context.Exception.InnerException;
@@ -53,17 +66,28 @@ namespace ServicioMiBanco.API.Infrastructure.Filters
                 context.Result = new BadRequestObjectResult(json);
                 context.HttpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
             }
+            else if (context.Exception is ArgumentNullException argEx)
+            {
+                var json = new JsonErrorResponse
+                {
+                    Messages = new[] { argEx.Message },
+                    MessageType = NotificationMessageType.FORMFIELDS
+                };
+
+                context.Result = new BadRequestObjectResult(json);
+                context.HttpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+            }
             else
             {
                 var json = new JsonErrorResponse
                 {
-                    Messages = new[] { "Ocurrió un error interno, intente nuevamente por favor." },
+                    Messages = new[] { context.Exception.GetBaseException().Message }, // último mensaje
                     MessageType = NotificationMessageType.INTERNALERROR,
-                    DeveloperMessage = context.Exception
+                    DeveloperMessage = context.Exception // stack completo (para logs)
                 };
 
-                context.Result = new InternalServerErrorObjectResult(json);
-                context.HttpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                context.Result = new BadRequestObjectResult(json);
+                context.HttpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
             }
 
             context.ExceptionHandled = true;

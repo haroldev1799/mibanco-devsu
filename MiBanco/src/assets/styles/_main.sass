@@ -1,0 +1,122 @@
+@use "./_variables" as variable
+
+:root
+    --black:#000000
+    --white:#ffffff
+    --dark: #2A2E35
+    --text-primary:#315692
+    --text-neutral: #878687
+    --text-light: #3d455080
+    --text-text-brand-primary: #3E3E3E
+    --color-inactive:#e0e0e0
+    --visibility: hidden
+    --option-bg:#FFF3F3
+
+    --complementary-success-50:#E6F3E0
+    --complementary-success-80:#e3f5de
+    --complementary-success-100: #D1E7DD
+    --complementary-success-500: #05C65D
+    --complementary-success-600: #63B53C
+    --complementary-success-700: #3eb91a
+    --complementary-success-800: #0B9B6C
+
+    --complementary-warning-50: #FFF6E9
+    --complementary-warning-80:#faefef
+    --complementary-warning-500: #FFC041
+    --complementary-warning-600: #DEB267
+    --complementary-warning-700: #e2ad43
+
+    --complementary-scooter-50: #D6E9FF
+    --complementary-scooter-100:#8CBFF7
+    --complementary-scooter-500: #3D96FF
+    --complementary-scooter-600: #2D8DFF
+
+    --surface-surface-branded-select: #E6F6F3
+
+    --p-dialog-color: #333333 !important
+
+
+    --neutral-50: #F4F5F7
+    --neutral-100: #EFEFEF
+    --neutral-150: #ececec
+    --neutral-200: #f7f7f7
+    --neutral-250:#D1D1D1
+    --neutral-300: #d2d2d2
+    --neutral-400: #adadad
+    --neutral-500: #9B9B9B
+    --neutral-600: #9FA6B0
+    --neutral-700: #888d94
+    --neutral-800: #676767
+    --neutral-850: #3d455080
+    --neutral-900: #545454
+    --neutral-950: #3D4550
+    --neutral-980: #363d46
+
+    --primary-50: #FBE4E5
+    --primary-100:#F23838
+    --primary-200: #FF3E3B
+    --primary-300: #E43636
+    --primary-400: #E6393B
+    --primary-450: #dc3545
+    --primary-500: #CC2128
+    --primary-600: #bd2130
+    --primary-700: #c20d19
+
+    --p-select-placeholder-color: var(--neutral-500) !important
+    --p-select-option-focus-background: var(--option-bg) !important
+    --p-select-option-selected-background: var(--option-bg) !important
+    --p-select-option-selected-focus-background: var(--option-bg) !important
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    font-family: "AvenirMedium"
+    /* Para Firefox */
+
+html,
+body
+    height: 100%
+    overflow-y: auto
+
+fieldset
+    border: none
+    padding: 0
+    margin: 0
+
+legend
+    padding: 0
+
+ul,
+li
+    list-style-type: none
+    padding: 0
+    margin: 0
+
+p, span, label, h1, h2, h3, h4, h5, h6
+    letter-spacing: 0.1px
+    word-spacing: 0
+
+.text-neutral-950
+    color: var(--neutral-950)
+
+
+::-webkit-scrollbar
+    -webkit-appearance: none !important
+
+::-webkit-scrollbar:vertical
+    width: 10px !important
+
+::-webkit-scrollbar:horizontal
+    height: 10px !important
+
+::-webkit-scrollbar-button:increment,
+::-webkit-scrollbar-button
+    display: none !important
+
+::-webkit-scrollbar-thumb
+    background-color:  #a8a8a8 !important
+    border-radius: 100px !important
+::-webkit-scrollbar-track
+    background-color: var(--white) !important
+    -webkit-box-shadow: none !important
+

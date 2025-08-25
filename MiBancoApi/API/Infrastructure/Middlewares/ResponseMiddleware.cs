@@ -39,6 +39,12 @@ public class ResponseMiddleware
                 }
             }
 
+            if (context.Response.StatusCode == (int)HttpStatusCode.NoContent)
+            {
+                context.Response.Body = originalBodyStream; // restauramos
+                return; // no escribimos nada porque 204 no lo permite
+            }
+
             // 👇 aseguramos que siempre haya algo
             if (data == null)
                 data = new { };

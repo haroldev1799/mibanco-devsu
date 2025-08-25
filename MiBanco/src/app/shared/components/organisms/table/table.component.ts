@@ -1,8 +1,5 @@
 import { AfterViewInit, Component, ContentChild, Input, OnChanges, SimpleChanges, TemplateRef, ViewChild } from '@angular/core';
 import { TABLE_IMPORTS } from './table.component.constant';
-import { MatPaginator } from '@angular/material/paginator';
-import { MatSort } from '@angular/material/sort';
-import { MatTableDataSource } from '@angular/material/table';
 import { Column } from './table.interface';
 
 @Component({
@@ -13,11 +10,11 @@ import { Column } from './table.interface';
 })
 export class TableComponent<T> implements OnChanges, AfterViewInit {
 
-  @ViewChild(MatPaginator) paginator!: MatPaginator;
-  @ViewChild(MatSort) sort!: MatSort;
+  paginator!: any;
+  sort!: any;
 	@ContentChild('actionsTemplate') customActionsTemplate!: TemplateRef<any>;
   
-  @Input() dataSource!: MatTableDataSource<T>;
+  @Input() dataSource!: any;
   @Input() columns: Column<any>[] = [];
   @Input() messageEmpty: string = '';
   @Input() filter: boolean = false;

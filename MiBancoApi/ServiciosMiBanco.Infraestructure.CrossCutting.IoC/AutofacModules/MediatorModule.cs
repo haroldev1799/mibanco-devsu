@@ -1,7 +1,6 @@
 ﻿using Autofac;
 using MediatR;
 using MediatR.NotificationPublishers;
-using MediatR.Licensing;
 using ServicioMiBanco.Application.Behaviors;
 using System.Reflection;
 
@@ -11,18 +10,24 @@ namespace ServiciosMiBanco.Infraestructure.CrossCutting.IoC.AutofacModules
     {
         protected override void Load(ContainerBuilder builder)
         {
-            // Publisher por defecto
-            builder.RegisterType<ForeachAwaitPublisher>()
-                   .As<INotificationPublisher>()
-                   .SingleInstance();
-
-            // Registrar núcleo de MediatR
+            // MediatR Core
             builder.RegisterAssemblyTypes(typeof(IMediator).GetTypeInfo().Assembly)
                    .AsImplementedInterfaces();
 
-            // Pipeline behaviors
+            // Registrar Handlers
+            builder.RegisterAssemblyTypes(Assembly.GetExecutingAssembly())
+                   .AsClosedTypesOf(typeof(IRequestHandler<,>))
+                   .AsImplementedInterfaces();
+
+            // Registrar Pipeline (Validaciones, etc.)
             builder.RegisterGeneric(typeof(ValidatorBehavior<,>))
-                   .As(typeof(IPipelineBehavior<,>));
+                   .As(typeof(IPipelineBehavior<,>))
+                   .InstancePerLifetimeScope();
+
+            // Publisher para notificaciones
+            builder.RegisterType<ForeachAwaitPublisher>()
+                   .As<INotificationPublisher>()
+                   .SingleInstance();
         }
     }
 }

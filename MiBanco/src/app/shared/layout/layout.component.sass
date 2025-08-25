@@ -1,8 +1,22 @@
-.content-sidenav
-  position: absolute
-  top: 0
-  bottom: 0
-  left: 0
-  right: 0
+.layout
+  display: flex
+  height: calc(100% - 60px)
+  .layout__menu
+    width: 10%
+    background-color: var(--white)
+    height: auto
+    border: 1px solid var(--neutral-200)
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+    .layout__menu-item
+      height: 50px
+      width: 100%
+      border-bottom: 1px solid var(--neutral-200)
+      display: flex
+      justify-content: center
+      align-items: center
+      color: var(--text-neutral) !important
+      cursor: pointer
 
-
+  .layout__content
+    width: 90%
+    background-color: var(--white)

@@ -15,6 +15,8 @@ namespace ServicioMiBanco.Application.Commands.AccountCommand
         [DataMember]
         public decimal initial_balance { get; set; }
         [DataMember]
+        public decimal current_balance { get; set; }
+        [DataMember]
         public decimal daily_limit_amount { get; set; }
         [DataMember]
         public bool status { get; set; }

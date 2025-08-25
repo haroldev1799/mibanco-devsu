@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { LAYOUT_IMPORTS } from './layout.component.constant';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-layout',
@@ -9,4 +10,9 @@ import { LAYOUT_IMPORTS } from './layout.component.constant';
 })
 export class LayoutComponent {
 
+  private router = inject(Router);
+
+  redirect(route: string){
+    this.router.navigate([route]);
+  }
 }

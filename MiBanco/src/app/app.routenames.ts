@@ -1,4 +1,4 @@
 export enum APP_ROUTE_NAMES {
-	HEROE = 'heroe',
+	CLIENT = 'cliente',
 	UNAUTHORIZED = 'error-403'
 }

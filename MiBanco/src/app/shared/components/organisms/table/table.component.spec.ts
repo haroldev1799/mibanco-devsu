@@ -1,10 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { MatTableDataSource } from '@angular/material/table';
 import { TableComponent } from './table.component';
 import { Column } from './table.interface';
-import { of } from 'rxjs';
-import { MatPaginator } from '@angular/material/paginator';
-import { MatSort } from '@angular/material/sort';
 
 describe('TableComponent', () => {
   let component: TableComponent<any>;

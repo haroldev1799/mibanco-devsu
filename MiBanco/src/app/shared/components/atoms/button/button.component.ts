@@ -1,10 +1,9 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ButtonData, ButtonType, ButtonTypeComponent } from './button.interface';
-import {MatButtonModule} from '@angular/material/button';
 
 @Component({
 	selector: 'app-button',
-	imports: [MatButtonModule],
+	imports: [],
 	templateUrl: './button.component.html',
 	styleUrl: './button.component.sass',
 })
