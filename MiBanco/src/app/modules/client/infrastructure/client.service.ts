@@ -1,82 +1,33 @@
-import { inject, signal } from '@angular/core';
-import { CreateHeroRequest, CreateHeroResponse, DeleteHeroResponse, DetailHeroResponse,
-	Hero, HeroResponse, UpdateHeroRequest, UpdateHeroResponse } from '../domain/dto/client.dto';
+import { inject } from '@angular/core';
+
 import { Observable, of } from 'rxjs';
-import { StorageService } from '@app/shared/services/localstorage.service';
 import { ClientRepository } from '../domain/repository/client.repository';
+import { HttpClient } from '@angular/common/http';
+import { URL_BACKEND } from '@app/core/config/url';
+import { CreateClientRequest, CreateClientResponse, DeleteClientRequest, DeleteClientResponse, DetailClientResponse, ListClientResponse, UpdateClientRequest, UpdateClientResponse } from '../domain/dto/client.dto';
 
 export class ClientRepositoryService extends ClientRepository  {
 	
-  private readonly _heroes = signal<Hero[]>([]);
-  private storage = inject(StorageService);
-  private STORAGE_KEY = 'heroes';
-  readonly heroes = this._heroes;
+  private readonly http = inject(HttpClient);
+  protected url = `${URL_BACKEND}Client/`;
 
-  constructor() {
-    super();
-    const saved = this.storage.get<Hero[]>(this.STORAGE_KEY);
-    if (saved) this._heroes.set(saved);
+  getAll(): Observable<ListClientResponse> {
+	return this.http.get<ListClientResponse>(`${this.url}GetAll`);
   }
 
-  getAll(): Observable<HeroResponse> {
-    const heroes = this._heroes();
-    return of({
-		data: heroes,
-		message: 'Ok',
-		success: true,
-		status: 200
-	});
+  getById(id: string): Observable<DetailClientResponse | null> {
+	return this.http.get<DetailClientResponse>(`${this.url}GetById?id=${id}`);
   }
 
-  getById(id: string): Observable<DetailHeroResponse | null> {
-    const hero = this._heroes().find(h => h.id === id);
-	if(hero){
-		return of({
-			data: hero,
-			message: 'Ok',
-			success: true,
-			status: 200
-		});
-	}
-	return of(null);
+  create(client: CreateClientRequest): Observable<CreateClientResponse> {
+	return this.http.post<CreateClientResponse>(`${this.url}Create`, client);
   }
 
-  create(hero: CreateHeroRequest): Observable<CreateHeroResponse> {
-    const now = Date.now();
-    const heroDB: Hero = { ...hero, id: crypto.randomUUID(), createdAt: now, updatedAt: now };
-    this._heroes.set([heroDB, ...this._heroes()]);
-	this.persist();
-    return of({
-		data: heroDB,
-		message: 'Ok',
-		success: true,
-		status: 200
-	});
+  update(client: UpdateClientRequest): Observable<UpdateClientResponse> {
+	return this.http.post<UpdateClientResponse>(`${this.url}Update`, client);
   }
 
-  update(hero: UpdateHeroRequest): Observable<UpdateHeroResponse> {
-    this._heroes.update(list => list.map(h => h.id === hero.id ? { ...h, ...hero, updatedAt: Date.now() } : h));
-	this.persist();
-    return of({
-		data: hero,
-		message: 'Ok',
-		success: true,
-		status: 200
-	});
+  delete(client: DeleteClientRequest): Observable<DeleteClientResponse> {
+	return this.http.delete<DeleteClientResponse>(`${this.url}Delete`, { body: client});
   }
-
-  delete(id: string): Observable<DeleteHeroResponse> {
-	this._heroes.update(list => list.filter(h => h.id !== id));
-	this.persist();
-    return of({
-		data: id,
-		message: 'Ok',
-		success: true,
-		status: 200
-	});
-  }
-
-  private persist(): void {
-	this.storage.set(this.STORAGE_KEY, this._heroes());
- }
 }

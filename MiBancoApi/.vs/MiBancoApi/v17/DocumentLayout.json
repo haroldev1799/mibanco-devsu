@@ -216,7 +216,7 @@
               "RelativeDocumentMoniker": "API\\Infrastructure\\Middlewares\\ResponseMiddleware.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Infrastructure\\Middlewares\\ResponseMiddleware.cs",
               "RelativeToolTip": "API\\Infrastructure\\Middlewares\\ResponseMiddleware.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAowC0AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAowDkAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-25T06:54:42.271Z",
               "EditorCaption": ""
@@ -231,8 +231,7 @@
               "RelativeToolTip": "ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\AutofacModules\\ValidatorModule.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:28:06.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T06:28:06.266Z"
             },
             {
               "$type": "Document",
@@ -244,8 +243,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\AccountCommand\\CreateAccountCommandHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:06:55.903Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T06:06:55.903Z"
             },
             {
               "$type": "Document",
@@ -257,8 +255,7 @@
               "RelativeToolTip": "ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\AutofacModules\\MediatorModule.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:57:20.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T06:57:20.255Z"
             },
             {
               "$type": "Document",
@@ -270,8 +267,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Validations\\AccountValidation\\CreateAccountValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:20:15.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T06:20:15.225Z"
             },
             {
               "$type": "Document",
@@ -283,8 +279,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Behaviors\\ValidationBehaviors.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:56:54.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T06:56:54.163Z"
             },
             {
               "$type": "Document",
@@ -296,8 +291,7 @@
               "RelativeToolTip": "API\\Infrastructure\\Filters\\HttpGlobalExceptionFilter.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAAAowFwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:05:54.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T06:05:54.385Z"
             },
             {
               "$type": "Document",
@@ -309,8 +303,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\AccountCommand\\CreateAccountCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T03:37:29.949Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T03:37:29.949Z"
             },
             {
               "$type": "Document",
@@ -322,8 +315,7 @@
               "RelativeToolTip": "API\\Program.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:44:58.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T06:44:58.877Z"
             },
             {
               "$type": "Document",
@@ -335,8 +327,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\AccountCommand\\UpdateAccountCommandHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:20:42.379Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:20:42.379Z"
             },
             {
               "$type": "Document",
@@ -348,8 +339,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\AccountCommand\\UpdateAccountCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:20:41.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:20:41.843Z"
             },
             {
               "$type": "Document",
@@ -361,8 +351,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Validations\\AccountValidation\\DeleteAccountValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:20:32.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T06:20:32.523Z"
             },
             {
               "$type": "Document",
@@ -374,8 +363,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Validations\\ClientValidation\\UpdateClientValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:21:06.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T06:21:06.014Z"
             },
             {
               "$type": "Document",
@@ -387,8 +375,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Validations\\MovementValidation\\UpdateMovementValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:21:16.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T06:21:16.126Z"
             },
             {
               "$type": "Document",
@@ -400,8 +387,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Validations\\MovementValidation\\CreateMovementValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:21:22.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T06:21:22.432Z"
             },
             {
               "$type": "Document",
@@ -413,8 +399,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Validations\\MovementValidation\\DeleteMovementValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:21:30.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T06:21:30.513Z"
             },
             {
               "$type": "Document",
@@ -426,8 +411,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Validations\\ClientValidation\\CreateClientValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:20:58.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T06:20:58.295Z"
             },
             {
               "$type": "Document",
@@ -439,8 +423,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Validations\\ClientValidation\\DeleteClientValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:20:49.829Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T06:20:49.829Z"
             },
             {
               "$type": "Document",
@@ -452,8 +435,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Validations\\AccountValidation\\UpdateAccountValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:20:24.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T06:20:24.527Z"
             },
             {
               "$type": "Document",
@@ -465,8 +447,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\AccountCommand\\DeleteAccountCommandHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:19:56.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:19:56.278Z"
             },
             {
               "$type": "Document",
@@ -478,8 +459,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\MovementCommand\\CreateMovementCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:06:45.854Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T06:06:45.854Z"
             },
             {
               "$type": "Document",
@@ -491,8 +471,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\MovementCommand\\CreateMovementCommandHandler.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAYwEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:29:40.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:29:40.365Z"
             },
             {
               "$type": "Document",
@@ -504,8 +483,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Queries\\MovementQueries\\MovementQueries.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAwwCgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T04:01:08.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T04:01:08.902Z"
             },
             {
               "$type": "Document",
@@ -517,8 +495,7 @@
               "RelativeToolTip": "ServiciosMiBanco.Infrastructure.Persistence\\EntityConfigurations\\AccountConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:50:51.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:50:51.129Z"
             },
             {
               "$type": "Document",
@@ -530,8 +507,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\MovementCommand\\DeleteMovementCommandHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:33:36.864Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:33:36.864Z"
             },
             {
               "$type": "Document",
@@ -543,8 +519,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\MovementCommand\\DeleteMovementCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:29:31.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:29:31.065Z"
             },
             {
               "$type": "Document",
@@ -556,8 +531,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\MovementCommand\\UpdateMovementCommandHandler.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAIBJwBEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:32:50.193Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:32:50.193Z"
             },
             {
               "$type": "Document",
@@ -569,8 +543,7 @@
               "RelativeToolTip": "ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\AutofacModules\\QueriesModule.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T01:01:31.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T01:01:31.853Z"
             },
             {
               "$type": "Document",
@@ -582,8 +555,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Queries\\ClientQueries\\IClientQueries.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:58:57.649Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:58:57.649Z"
             },
             {
               "$type": "Document",
@@ -595,8 +567,7 @@
               "RelativeToolTip": "ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\AutofacModules\\CommandsModule.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:39:08.405Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:39:08.405Z"
             },
             {
               "$type": "Document",
@@ -608,8 +579,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\ClientCommand\\CreateClientCommandHandler.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAIBJwAwAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:20:53.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:20:53.815Z"
             },
             {
               "$type": "Document",
@@ -621,8 +591,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Queries\\ClientQueries\\ClientViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:57:21.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:57:21.383Z"
             },
             {
               "$type": "Document",
@@ -634,8 +603,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Queries\\ClientQueries\\ClientQueries.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAmwCAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:57:32.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:57:32.659Z"
             },
             {
               "$type": "Document",
@@ -647,8 +615,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\ClientCommand\\DeleteClientCommandHandler.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAuwB8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:20:58.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:20:58.858Z"
             },
             {
               "$type": "Document",
@@ -660,8 +627,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\ClientCommand\\UpdateClientCommandHandler.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAIBJwAkAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:21:04.38Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:21:04.38Z"
             },
             {
               "$type": "Document",
@@ -673,8 +639,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\ClientCommand\\CreateClientCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T03:01:00.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T03:01:00.738Z"
             },
             {
               "$type": "Document",
@@ -686,8 +651,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\ClientCommand\\UpdateClientCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T03:19:38.521Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T03:19:38.521Z"
             },
             {
               "$type": "Document",
@@ -699,8 +663,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\ClientCommand\\DeleteClientCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:20:56.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:20:56.474Z"
             },
             {
               "$type": "Document",
@@ -712,8 +675,7 @@
               "RelativeToolTip": "API\\Controllers\\AccountController.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAgwCwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:46:07.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:46:07.628Z"
             },
             {
               "$type": "Document",
@@ -725,8 +687,7 @@
               "RelativeToolTip": "ServiciosMiBanco.Infrastructure.Persistence\\EntityConfigurations\\PersonConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:50:12.379Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:50:12.379Z"
             },
             {
               "$type": "Document",
@@ -738,8 +699,7 @@
               "RelativeToolTip": "ServiciosMiBanco.Infrastructure.Persistence\\EntityConfigurations\\ClientConfiguration.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAmwAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:50:36.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:50:36.902Z"
             },
             {
               "$type": "Document",
@@ -751,8 +711,7 @@
               "RelativeToolTip": "ServiciosMiBanco.Infrastructure.Persistence\\EntityConfigurations\\MovementConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:50:46.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:50:46.279Z"
             },
             {
               "$type": "Document",
@@ -764,8 +723,7 @@
               "RelativeToolTip": "ServiciosMiBanco.Infrastructure.Persistence\\Repositories\\AccountRepository.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAkwBkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T01:38:10.289Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T01:38:10.289Z"
             },
             {
               "$type": "Document",
@@ -777,8 +735,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Queries\\AccountQueries\\AccountViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:59:15.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:59:15.953Z"
             },
             {
               "$type": "Document",
@@ -790,8 +747,7 @@
               "RelativeToolTip": "API\\Controllers\\ClientController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:46:41.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:46:41.74Z"
             },
             {
               "$type": "Document",
@@ -803,8 +759,7 @@
               "RelativeToolTip": "API\\Controllers\\MovementController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:46:30.976Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:46:30.976Z"
             },
             {
               "$type": "Document",
@@ -816,8 +771,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Queries\\AccountQueries\\IAccountQueries.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:59:00.883Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:59:00.883Z"
             },
             {
               "$type": "Document",
@@ -829,8 +783,7 @@
               "RelativeToolTip": "ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\AutofacModules\\RepositoryModule.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:43:33.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:43:33.067Z"
             },
             {
               "$type": "Document",
@@ -842,8 +795,7 @@
               "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\AccountCommand\\DeleteAccountCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T00:29:07.804Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T00:29:07.804Z"
             }
           ]
         }

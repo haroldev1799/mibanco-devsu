@@ -10,4 +10,15 @@
             <span>{{item.label}}</span>
         </button>
     }
-</mat-menu> -->gaa
+</mat-menu> -->
+<div class="dropdown">
+  <button class="dropdown-btn">
+     ⋮
+  </button>
+  <ul class="dropdown-content">
+    
+    @for (item of options; track $index) {
+        <li><a (click)="selectOption(item.value)">{{item.label}}</a></li>
+    }
+  </ul>
+</div>

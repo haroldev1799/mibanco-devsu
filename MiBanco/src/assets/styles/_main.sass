@@ -62,6 +62,8 @@
     --primary-600: #bd2130
     --primary-700: #c20d19
 
+    --secondary-50: #fede00
+
     --p-select-placeholder-color: var(--neutral-500) !important
     --p-select-option-focus-background: var(--option-bg) !important
     --p-select-option-selected-background: var(--option-bg) !important
@@ -120,3 +122,26 @@ p, span, label, h1, h2, h3, h4, h5, h6
     background-color: var(--white) !important
     -webkit-box-shadow: none !important
 
+
+// _elevation.sass
+= elevation($z)
+  @if $z == 0
+    box-shadow: none
+  @else if $z == 1
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24)
+  @else if $z == 2
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16), 0px 3px 6px rgba(0,0,0,0.23)
+  @else if $z == 8
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2), 0px 9px 46px rgba(0,0,0,0.12), 0px 24px 38px rgba(0,0,0,0.14)
+  @else if $z == 24
+    box-shadow: 0px 11px 15px rgba(0,0,0,0.2), 0px 9px 46px rgba(0,0,0,0.12), 0px 24px 38px rgba(0,0,0,0.14)
+
+$elevations: (0: none,
+              1: 0px 1px 3px rgba(0,0,0,0.12),
+              2: 0px 3px 6px rgba(0,0,0,0.16),
+              8: 0px 5px 15px rgba(0,0,0,0.2),
+              24: 0px 11px 15px rgba(0,0,0,0.2))
+
+@each $level, $shadow in $elevations
+  .elevation-#{$level}
+    box-shadow: #{$shadow}

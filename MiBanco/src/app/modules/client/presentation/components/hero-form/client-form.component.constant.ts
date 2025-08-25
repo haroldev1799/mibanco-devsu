@@ -1,7 +1,6 @@
 import { FormsModule } from '@angular/forms';
 import { CardComponent } from "@app/shared/components/atoms/card/card.component";
 import { InputComponent } from '@app/shared/components/atoms/input/input.component';
-import { HeroForm } from '../../../domain/dto/client.dto';
 import { ButtonComponent } from "@app/shared/components/atoms/button/button.component";
 
 export const HERO_FORM_IMPORTS = [
@@ -16,4 +15,4 @@ export const HERO_FORM = {
 	Power: 'power',
 	Universe: 'universe',
     Age: 'age'
-} as const satisfies Record<string, keyof HeroForm>;
+} as const satisfies Record<string, keyof any>;

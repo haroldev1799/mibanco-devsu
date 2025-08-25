@@ -6,7 +6,7 @@ import { ButtonComponent } from "@app/shared/components/atoms/button/button.comp
 import { ButtonType } from '@app/shared/components/atoms/button/button.interface';
 import { OPTIONS_CODE } from '@app/core/enums/options.enum';
 import { Router } from '@angular/router';
-import { COLUMNS_HEROES_LIST, MESSAGES } from './client-list.component.constants';
+import { COLUMNS_CLIENT_LIST, MESSAGES } from './client-list.component.constants';
 import { LoaderService } from '@app/shared/services/loader.service';
 import { ModalMessageService } from '@app/shared/services/modal-message.service';
 import { MODAL_MESSAGES } from '@app/core/dictionaries/messages/messages-crud';
@@ -21,14 +21,14 @@ import { CLIENT_ROUTE_NAMES_GLOBAL } from '@app/modules/client/client.routenames
 })
 export class ClientListComponent implements OnInit {
 
-	private heroesRepository = inject(ClientRepository);
+	private clientRepository = inject(ClientRepository);
 	private router = inject(Router);
   private loaderService = inject(LoaderService);
   private modalService = inject(ModalMessageService);
 
-  dataSource = [];
+  dataSource:any[] = [];
 
-  columns = COLUMNS_HEROES_LIST;
+  columns = COLUMNS_CLIENT_LIST;
   options = Object.values(optionsMenu);
 
   buttonType = ButtonType;
@@ -36,9 +36,9 @@ export class ClientListComponent implements OnInit {
 
   ngOnInit(): void {
     this.loaderService.show();
-    this.heroesRepository.getAll().subscribe({
+    this.clientRepository.getAll().subscribe({
       next:(result: any) => {
-        // this.dataSource.data = [...result.data];
+        this.dataSource = [...result.data];
       },
       complete:() => this.loaderService.hide(),
     });
@@ -65,11 +65,11 @@ export class ClientListComponent implements OnInit {
   }
 
   private _delete(id: string) {
-    this.loaderService.show();
-    this.heroesRepository.delete(id).subscribe({
-      next:() => this.ngOnInit(),
-      complete: () => this.loaderService.hide()
-    });
+    // this.loaderService.show();
+    // this.heroesRepository.delete(id).subscribe({
+    //   next:() => this.ngOnInit(),
+    //   complete: () => this.loaderService.hide()
+    // });
   }
 
 }

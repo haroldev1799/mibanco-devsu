@@ -4,9 +4,38 @@
         <input matInput (keyup)="applyFilter($event)" placeholder="Escriba aquí" #input>
     </mat-form-field> -->
 }
-<div class="mat-elevation-z8">
+
+<div class="table elevation-8">
   <!-- <table mat-table [dataSource]="dataSource" matSort> -->
   <table>
+    <thead>
+        <tr>
+            <th *ngFor="let column of columns">
+                @if(column.header != 'actions'){
+                    {{column.header}}
+                }
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (data of dataSource; track $index) {
+            <tr>
+                @for (column of columns; track $index) {
+                    @if(column.header =='actions'){
+                        <td>
+                            <ng-container
+                                *ngTemplateOutlet="customActionsTemplate; context: { $implicit: data }"
+                            ></ng-container>
+                        </td>
+                    } @else {
+                        <td>
+                            {{ data[column.field] }}
+                        </td>
+                    }
+                }
+            </tr>
+        }
+    </tbody>
     <!-- <ng-container  *ngFor="let column of columns">
         <th mat-header-cell *matHeaderCellDef mat-sort-header class="justify-content-center">
             @if(column.type !== 'actions'){
@@ -50,7 +79,7 @@
     </tr> -->
 
  </table>
-  @if(dataSource.data.length > 0){
+  <!-- @if(dataSource.data.length > 0){ -->
     <!-- <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="paginator"></mat-paginator> -->
-  }
+  <!-- } -->
 </div>
