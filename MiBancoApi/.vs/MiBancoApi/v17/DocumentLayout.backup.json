@@ -1,7 +1,148 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\MiBanco\\MiBancoApi\\MiBancoApi\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\queries\\movementqueries\\movementqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\queries\\movementqueries\\movementqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\commands\\accountcommand\\updateaccountcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\commands\\accountcommand\\updateaccountcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\commands\\accountcommand\\updateaccountcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\commands\\accountcommand\\updateaccountcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\commands\\accountcommand\\createaccountcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\commands\\accountcommand\\createaccountcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\commands\\accountcommand\\createaccountcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\commands\\accountcommand\\createaccountcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\commands\\movementcommand\\deletemovementcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\commands\\movementcommand\\deletemovementcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\commands\\movementcommand\\deletemovementcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\commands\\movementcommand\\deletemovementcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\commands\\movementcommand\\updatemovementcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\commands\\movementcommand\\updatemovementcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\commands\\movementcommand\\createmovementcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\commands\\movementcommand\\createmovementcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B858544-8D24-4B2C-9AF8-BE2BE2EFF6BD}|ServiciosMiBanco.Infrastructure.Persistence\\ServiciosMiBanco.Infrastructure.Persistence.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciosmibanco.infrastructure.persistence\\entityconfigurations\\accountconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B858544-8D24-4B2C-9AF8-BE2BE2EFF6BD}|ServiciosMiBanco.Infrastructure.Persistence\\ServiciosMiBanco.Infrastructure.Persistence.csproj|solutionrelative:serviciosmibanco.infrastructure.persistence\\entityconfigurations\\accountconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC4DF0D-BCFE-4BFE-BD66-5892439301CF}|ServicioMiBanco.Domain\\ServicioMiBanco.Domain.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.domain\\aggregatesmodel\\accountaggregate\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CC4DF0D-BCFE-4BFE-BD66-5892439301CF}|ServicioMiBanco.Domain\\ServicioMiBanco.Domain.csproj|solutionrelative:serviciomibanco.domain\\aggregatesmodel\\accountaggregate\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A14B4589-3027-4701-A931-68A05B244011}|ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\ServiciosMiBanco.Infraestructure.CrossCutting.IoC.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciosmibanco.infraestructure.crosscutting.ioc\\autofacmodules\\queriesmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A14B4589-3027-4701-A931-68A05B244011}|ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\ServiciosMiBanco.Infraestructure.CrossCutting.IoC.csproj|solutionrelative:serviciosmibanco.infraestructure.crosscutting.ioc\\autofacmodules\\queriesmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A14B4589-3027-4701-A931-68A05B244011}|ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\ServiciosMiBanco.Infraestructure.CrossCutting.IoC.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciosmibanco.infraestructure.crosscutting.ioc\\autofacmodules\\commandsmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A14B4589-3027-4701-A931-68A05B244011}|ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\ServiciosMiBanco.Infraestructure.CrossCutting.IoC.csproj|solutionrelative:serviciosmibanco.infraestructure.crosscutting.ioc\\autofacmodules\\commandsmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\queries\\clientqueries\\clientqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\queries\\clientqueries\\clientqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\queries\\clientqueries\\clientviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\queries\\clientqueries\\clientviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\queries\\clientqueries\\iclientqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\queries\\clientqueries\\iclientqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\commands\\clientcommand\\deleteclientcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\commands\\clientcommand\\deleteclientcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\commands\\clientcommand\\updateclientcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\commands\\clientcommand\\updateclientcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\commands\\clientcommand\\updateclientcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\commands\\clientcommand\\updateclientcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\commands\\clientcommand\\createclientcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\commands\\clientcommand\\createclientcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\commands\\clientcommand\\createclientcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\commands\\clientcommand\\createclientcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\commands\\clientcommand\\deleteclientcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\commands\\clientcommand\\deleteclientcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B858544-8D24-4B2C-9AF8-BE2BE2EFF6BD}|ServiciosMiBanco.Infrastructure.Persistence\\ServiciosMiBanco.Infrastructure.Persistence.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciosmibanco.infrastructure.persistence\\entityconfigurations\\movementconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B858544-8D24-4B2C-9AF8-BE2BE2EFF6BD}|ServiciosMiBanco.Infrastructure.Persistence\\ServiciosMiBanco.Infrastructure.Persistence.csproj|solutionrelative:serviciosmibanco.infrastructure.persistence\\entityconfigurations\\movementconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B858544-8D24-4B2C-9AF8-BE2BE2EFF6BD}|ServiciosMiBanco.Infrastructure.Persistence\\ServiciosMiBanco.Infrastructure.Persistence.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciosmibanco.infrastructure.persistence\\entityconfigurations\\clientconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B858544-8D24-4B2C-9AF8-BE2BE2EFF6BD}|ServiciosMiBanco.Infrastructure.Persistence\\ServiciosMiBanco.Infrastructure.Persistence.csproj|solutionrelative:serviciosmibanco.infrastructure.persistence\\entityconfigurations\\clientconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B858544-8D24-4B2C-9AF8-BE2BE2EFF6BD}|ServiciosMiBanco.Infrastructure.Persistence\\ServiciosMiBanco.Infrastructure.Persistence.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciosmibanco.infrastructure.persistence\\entityconfigurations\\personconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B858544-8D24-4B2C-9AF8-BE2BE2EFF6BD}|ServiciosMiBanco.Infrastructure.Persistence\\ServiciosMiBanco.Infrastructure.Persistence.csproj|solutionrelative:serviciosmibanco.infrastructure.persistence\\entityconfigurations\\personconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B858544-8D24-4B2C-9AF8-BE2BE2EFF6BD}|ServiciosMiBanco.Infrastructure.Persistence\\ServiciosMiBanco.Infrastructure.Persistence.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciosmibanco.infrastructure.persistence\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B858544-8D24-4B2C-9AF8-BE2BE2EFF6BD}|ServiciosMiBanco.Infrastructure.Persistence\\ServiciosMiBanco.Infrastructure.Persistence.csproj|solutionrelative:serviciosmibanco.infrastructure.persistence\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|solutionrelative:api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\queries\\accountqueries\\accountqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\queries\\accountqueries\\accountqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\api\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|solutionrelative:api\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\api\\controllers\\movementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|solutionrelative:api\\controllers\\movementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\queries\\accountqueries\\accountviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\queries\\accountqueries\\accountviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\queries\\accountqueries\\iaccountqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\queries\\accountqueries\\iaccountqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A14B4589-3027-4701-A931-68A05B244011}|ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\ServiciosMiBanco.Infraestructure.CrossCutting.IoC.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciosmibanco.infraestructure.crosscutting.ioc\\autofacmodules\\repositorymodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A14B4589-3027-4701-A931-68A05B244011}|ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\ServiciosMiBanco.Infraestructure.CrossCutting.IoC.csproj|solutionrelative:serviciosmibanco.infraestructure.crosscutting.ioc\\autofacmodules\\repositorymodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\commands\\accountcommand\\deleteaccountcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\commands\\accountcommand\\deleteaccountcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\commands\\accountcommand\\deleteaccountcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\commands\\accountcommand\\deleteaccountcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +150,462 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateAccountCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\AccountCommand\\CreateAccountCommandHandler.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Commands\\AccountCommand\\CreateAccountCommandHandler.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\AccountCommand\\CreateAccountCommandHandler.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\AccountCommand\\CreateAccountCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T01:56:20.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DeleteMovementCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\MovementCommand\\DeleteMovementCommandHandler.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Commands\\MovementCommand\\DeleteMovementCommandHandler.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\MovementCommand\\DeleteMovementCommandHandler.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\MovementCommand\\DeleteMovementCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:33:36.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UpdateAccountCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\AccountCommand\\UpdateAccountCommandHandler.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Commands\\AccountCommand\\UpdateAccountCommandHandler.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\AccountCommand\\UpdateAccountCommandHandler.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\AccountCommand\\UpdateAccountCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:20:42.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpdateAccountCommand.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\AccountCommand\\UpdateAccountCommand.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Commands\\AccountCommand\\UpdateAccountCommand.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\AccountCommand\\UpdateAccountCommand.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\AccountCommand\\UpdateAccountCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:20:41.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateAccountCommand.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\AccountCommand\\CreateAccountCommand.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Commands\\AccountCommand\\CreateAccountCommand.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\AccountCommand\\CreateAccountCommand.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\AccountCommand\\CreateAccountCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T03:37:29.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MovementQueries.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Queries\\MovementQueries\\MovementQueries.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Queries\\MovementQueries\\MovementQueries.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Queries\\MovementQueries\\MovementQueries.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Queries\\MovementQueries\\MovementQueries.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwCgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T04:01:08.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DeleteMovementCommand.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\MovementCommand\\DeleteMovementCommand.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Commands\\MovementCommand\\DeleteMovementCommand.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\MovementCommand\\DeleteMovementCommand.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\MovementCommand\\DeleteMovementCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:29:31.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UpdateMovementCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\MovementCommand\\UpdateMovementCommandHandler.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Commands\\MovementCommand\\UpdateMovementCommandHandler.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\MovementCommand\\UpdateMovementCommandHandler.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\MovementCommand\\UpdateMovementCommandHandler.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:32:50.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateMovementCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\MovementCommand\\CreateMovementCommandHandler.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Commands\\MovementCommand\\CreateMovementCommandHandler.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\MovementCommand\\CreateMovementCommandHandler.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\MovementCommand\\CreateMovementCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:29:40.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccountConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infrastructure.Persistence\\EntityConfigurations\\AccountConfiguration.cs",
+              "RelativeDocumentMoniker": "ServiciosMiBanco.Infrastructure.Persistence\\EntityConfigurations\\AccountConfiguration.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infrastructure.Persistence\\EntityConfigurations\\AccountConfiguration.cs",
+              "RelativeToolTip": "ServiciosMiBanco.Infrastructure.Persistence\\EntityConfigurations\\AccountConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:50:51.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Domain\\AggregatesModel\\AccountAggregate\\Account.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Domain\\AggregatesModel\\AccountAggregate\\Account.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Domain\\AggregatesModel\\AccountAggregate\\Account.cs",
+              "RelativeToolTip": "ServicioMiBanco.Domain\\AggregatesModel\\AccountAggregate\\Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T03:40:23.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "QueriesModule.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\AutofacModules\\QueriesModule.cs",
+              "RelativeDocumentMoniker": "ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\AutofacModules\\QueriesModule.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\AutofacModules\\QueriesModule.cs",
+              "RelativeToolTip": "ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\AutofacModules\\QueriesModule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T01:01:31.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IClientQueries.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Queries\\ClientQueries\\IClientQueries.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Queries\\ClientQueries\\IClientQueries.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Queries\\ClientQueries\\IClientQueries.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Queries\\ClientQueries\\IClientQueries.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:58:57.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CommandsModule.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\AutofacModules\\CommandsModule.cs",
+              "RelativeDocumentMoniker": "ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\AutofacModules\\CommandsModule.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\AutofacModules\\CommandsModule.cs",
+              "RelativeToolTip": "ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\AutofacModules\\CommandsModule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:39:08.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CreateClientCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\ClientCommand\\CreateClientCommandHandler.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Commands\\ClientCommand\\CreateClientCommandHandler.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\ClientCommand\\CreateClientCommandHandler.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\ClientCommand\\CreateClientCommandHandler.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:20:53.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ClientViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Queries\\ClientQueries\\ClientViewModel.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Queries\\ClientQueries\\ClientViewModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Queries\\ClientQueries\\ClientViewModel.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Queries\\ClientQueries\\ClientViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:57:21.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ClientQueries.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Queries\\ClientQueries\\ClientQueries.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Queries\\ClientQueries\\ClientQueries.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Queries\\ClientQueries\\ClientQueries.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Queries\\ClientQueries\\ClientQueries.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAmwCAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:57:32.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DeleteClientCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\ClientCommand\\DeleteClientCommandHandler.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Commands\\ClientCommand\\DeleteClientCommandHandler.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\ClientCommand\\DeleteClientCommandHandler.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\ClientCommand\\DeleteClientCommandHandler.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAuwB8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:20:58.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UpdateClientCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\ClientCommand\\UpdateClientCommandHandler.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Commands\\ClientCommand\\UpdateClientCommandHandler.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\ClientCommand\\UpdateClientCommandHandler.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\ClientCommand\\UpdateClientCommandHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:21:04.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CreateClientCommand.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\ClientCommand\\CreateClientCommand.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Commands\\ClientCommand\\CreateClientCommand.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\ClientCommand\\CreateClientCommand.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\ClientCommand\\CreateClientCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T03:01:00.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UpdateClientCommand.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\ClientCommand\\UpdateClientCommand.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Commands\\ClientCommand\\UpdateClientCommand.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\ClientCommand\\UpdateClientCommand.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\ClientCommand\\UpdateClientCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T03:19:38.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DeleteClientCommand.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\ClientCommand\\DeleteClientCommand.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Commands\\ClientCommand\\DeleteClientCommand.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\ClientCommand\\DeleteClientCommand.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\ClientCommand\\DeleteClientCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:20:56.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "API\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:46:07.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PersonConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infrastructure.Persistence\\EntityConfigurations\\PersonConfiguration.cs",
+              "RelativeDocumentMoniker": "ServiciosMiBanco.Infrastructure.Persistence\\EntityConfigurations\\PersonConfiguration.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infrastructure.Persistence\\EntityConfigurations\\PersonConfiguration.cs",
+              "RelativeToolTip": "ServiciosMiBanco.Infrastructure.Persistence\\EntityConfigurations\\PersonConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:50:12.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ClientConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infrastructure.Persistence\\EntityConfigurations\\ClientConfiguration.cs",
+              "RelativeDocumentMoniker": "ServiciosMiBanco.Infrastructure.Persistence\\EntityConfigurations\\ClientConfiguration.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infrastructure.Persistence\\EntityConfigurations\\ClientConfiguration.cs",
+              "RelativeToolTip": "ServiciosMiBanco.Infrastructure.Persistence\\EntityConfigurations\\ClientConfiguration.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAmwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:50:36.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MovementConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infrastructure.Persistence\\EntityConfigurations\\MovementConfiguration.cs",
+              "RelativeDocumentMoniker": "ServiciosMiBanco.Infrastructure.Persistence\\EntityConfigurations\\MovementConfiguration.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infrastructure.Persistence\\EntityConfigurations\\MovementConfiguration.cs",
+              "RelativeToolTip": "ServiciosMiBanco.Infrastructure.Persistence\\EntityConfigurations\\MovementConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:50:46.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AccountQueries.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Queries\\AccountQueries\\AccountQueries.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Queries\\AccountQueries\\AccountQueries.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Queries\\AccountQueries\\AccountQueries.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Queries\\AccountQueries\\AccountQueries.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:59:13.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AccountRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infrastructure.Persistence\\Repositories\\AccountRepository.cs",
+              "RelativeDocumentMoniker": "ServiciosMiBanco.Infrastructure.Persistence\\Repositories\\AccountRepository.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infrastructure.Persistence\\Repositories\\AccountRepository.cs",
+              "RelativeToolTip": "ServiciosMiBanco.Infrastructure.Persistence\\Repositories\\AccountRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA7wBkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T01:38:10.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AccountViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Queries\\AccountQueries\\AccountViewModel.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Queries\\AccountQueries\\AccountViewModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Queries\\AccountQueries\\AccountViewModel.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Queries\\AccountQueries\\AccountViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:59:15.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\ClientController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "API\\Controllers\\ClientController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:46:41.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "MovementController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Controllers\\MovementController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\MovementController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Controllers\\MovementController.cs",
+              "RelativeToolTip": "API\\Controllers\\MovementController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:46:30.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IAccountQueries.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Queries\\AccountQueries\\IAccountQueries.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Queries\\AccountQueries\\IAccountQueries.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Queries\\AccountQueries\\IAccountQueries.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Queries\\AccountQueries\\IAccountQueries.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:59:00.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "RepositoryModule.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\AutofacModules\\RepositoryModule.cs",
+              "RelativeDocumentMoniker": "ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\AutofacModules\\RepositoryModule.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\AutofacModules\\RepositoryModule.cs",
+              "RelativeToolTip": "ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\AutofacModules\\RepositoryModule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:43:33.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "DeleteAccountCommand.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\AccountCommand\\DeleteAccountCommand.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Commands\\AccountCommand\\DeleteAccountCommand.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\AccountCommand\\DeleteAccountCommand.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\AccountCommand\\DeleteAccountCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:29:07.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "DeleteAccountCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\AccountCommand\\DeleteAccountCommandHandler.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Commands\\AccountCommand\\DeleteAccountCommandHandler.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\AccountCommand\\DeleteAccountCommandHandler.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\AccountCommand\\DeleteAccountCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T00:19:56.278Z",
+              "EditorCaption": ""
             }
           ]
         }

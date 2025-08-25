@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>60e6f4c8-0a77-42b2-89b5-7064aa9e6007</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="8.0.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.9.2" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ServicioMiBanco.Application\ServicioMiBanco.Application.csproj" />
+    <ProjectReference Include="..\ServicioMiBanco.Domain\ServicioMiBanco.Domain.csproj" />
+    <ProjectReference Include="..\ServiciosMiBanco.Infraestructure.CrossCutting.IoC\ServiciosMiBanco.Infraestructure.CrossCutting.IoC.csproj" />
+    <ProjectReference Include="..\ServiciosMiBanco.Infraestructure.CrossCutting.Services\ServiciosMiBanco.Infraestructure.CrossCutting.Services.csproj" />
+    <ProjectReference Include="..\ServiciosMiBanco.Infraestructure.CrossCutting.Utility\ServiciosMiBanco.Infraestructure.CrossCutting.Utility.csproj" />
+    <ProjectReference Include="..\ServiciosMiBanco.Infrastructure.Persistence\ServiciosMiBanco.Infrastructure.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,16 @@
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanco.Infraestructure.CrossCutting.Services\bin\Debug\net8.0\ServiciosMiBanco.Infraestructure.CrossCutting.Services.deps.json
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanco.Infraestructure.CrossCutting.Services\bin\Debug\net8.0\ServiciosMiBanco.Infraestructure.CrossCutting.Services.dll
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanco.Infraestructure.CrossCutting.Services\bin\Debug\net8.0\ServiciosMiBanco.Infraestructure.CrossCutting.Services.pdb
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanco.Infraestructure.CrossCutting.Services\bin\Debug\net8.0\ServiciosMiBanco.Infraestructure.CrossCutting.Utility.dll
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanco.Infraestructure.CrossCutting.Services\bin\Debug\net8.0\ServiciosMiBanco.Infraestructure.CrossCutting.Utility.pdb
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanco.Infraestructure.CrossCutting.Services\obj\Debug\net8.0\ServiciosMiBanco.Infraestructure.CrossCutting.Services.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanco.Infraestructure.CrossCutting.Services\obj\Debug\net8.0\ServiciosMiBanco.Infraestructure.CrossCutting.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanco.Infraestructure.CrossCutting.Services\obj\Debug\net8.0\ServiciosMiBanco.Infraestructure.CrossCutting.Services.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanco.Infraestructure.CrossCutting.Services\obj\Debug\net8.0\ServiciosMiBanco.Infraestructure.CrossCutting.Services.AssemblyInfo.cs
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanco.Infraestructure.CrossCutting.Services\obj\Debug\net8.0\ServiciosMiBanco.Infraestructure.CrossCutting.Services.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanco.Infraestructure.CrossCutting.Services\obj\Debug\net8.0\ServiciosMiBanco.Infraestructure.CrossCutting.Services.sourcelink.json
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanco.Infraestructure.CrossCutting.Services\obj\Debug\net8.0\Servicio.4DD70A05.Up2Date
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanco.Infraestructure.CrossCutting.Services\obj\Debug\net8.0\ServiciosMiBanco.Infraestructure.CrossCutting.Services.dll
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanco.Infraestructure.CrossCutting.Services\obj\Debug\net8.0\refint\ServiciosMiBanco.Infraestructure.CrossCutting.Services.dll
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanco.Infraestructure.CrossCutting.Services\obj\Debug\net8.0\ServiciosMiBanco.Infraestructure.CrossCutting.Services.pdb
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanco.Infraestructure.CrossCutting.Services\obj\Debug\net8.0\ref\ServiciosMiBanco.Infraestructure.CrossCutting.Services.dll

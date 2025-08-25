@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "3rr0JX9lcxFS3xLm7CWweOik9/x/aYkICPzUUOTurrc=",
+  "Source": "ServicioMiBanco.API",
+  "BasePath": "_content/ServicioMiBanco.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

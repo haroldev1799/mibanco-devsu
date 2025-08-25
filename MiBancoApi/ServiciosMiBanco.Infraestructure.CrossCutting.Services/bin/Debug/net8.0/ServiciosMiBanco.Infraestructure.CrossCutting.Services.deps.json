@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ServiciosMiBanco.Infraestructure.CrossCutting.Services/1.0.0": {
+        "dependencies": {
+          "ServiciosMiBanco.Infraestructure.CrossCutting.Utility": "1.0.0"
+        },
+        "runtime": {
+          "ServiciosMiBanco.Infraestructure.CrossCutting.Services.dll": {}
+        }
+      },
+      "ServiciosMiBanco.Infraestructure.CrossCutting.Utility/1.0.0": {
+        "runtime": {
+          "ServiciosMiBanco.Infraestructure.CrossCutting.Utility.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ServiciosMiBanco.Infraestructure.CrossCutting.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ServiciosMiBanco.Infraestructure.CrossCutting.Utility/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

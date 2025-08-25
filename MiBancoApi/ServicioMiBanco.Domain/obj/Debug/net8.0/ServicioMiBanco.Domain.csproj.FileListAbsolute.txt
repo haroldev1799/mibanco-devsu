@@ -1,0 +1,16 @@
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServicioMiBanco.Domain\bin\Debug\net8.0\ServicioMiBanco.Domain.deps.json
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServicioMiBanco.Domain\bin\Debug\net8.0\ServicioMiBanco.Domain.dll
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServicioMiBanco.Domain\bin\Debug\net8.0\ServicioMiBanco.Domain.pdb
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServicioMiBanco.Domain\bin\Debug\net8.0\ServicioMiBanco.Domain.Core.dll
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServicioMiBanco.Domain\bin\Debug\net8.0\ServicioMiBanco.Domain.Core.pdb
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServicioMiBanco.Domain\obj\Debug\net8.0\ServicioMiBanco.Domain.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServicioMiBanco.Domain\obj\Debug\net8.0\ServicioMiBanco.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServicioMiBanco.Domain\obj\Debug\net8.0\ServicioMiBanco.Domain.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServicioMiBanco.Domain\obj\Debug\net8.0\ServicioMiBanco.Domain.AssemblyInfo.cs
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServicioMiBanco.Domain\obj\Debug\net8.0\ServicioMiBanco.Domain.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServicioMiBanco.Domain\obj\Debug\net8.0\ServicioMiBanco.Domain.sourcelink.json
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServicioMiBanco.Domain\obj\Debug\net8.0\Servicio.F93A9308.Up2Date
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServicioMiBanco.Domain\obj\Debug\net8.0\ServicioMiBanco.Domain.dll
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServicioMiBanco.Domain\obj\Debug\net8.0\refint\ServicioMiBanco.Domain.dll
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServicioMiBanco.Domain\obj\Debug\net8.0\ServicioMiBanco.Domain.pdb
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServicioMiBanco.Domain\obj\Debug\net8.0\ref\ServicioMiBanco.Domain.dll
