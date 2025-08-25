@@ -1,0 +1,513 @@
+{
+	"info": {
+		"_postman_id": "377ae163-7a32-4e6b-8e68-81f6688af202",
+		"name": "MiBanco",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47206168",
+		"_collection_link": "https://byte66-7273.postman.co/workspace/Comsatel~3e7bab12-33aa-4926-a43c-a59432b4265c/collection/47206168-377ae163-7a32-4e6b-8e68-81f6688af202?action=share&source=collection_link&creator=47206168"
+	},
+	"item": [
+		{
+			"name": "Person",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/v1/Person/GetAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"v1",
+								"Person",
+								"GetAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/v1/Account/GetById?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"v1",
+								"Account",
+								"GetById"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/v1/Person/Create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"v1",
+								"Person",
+								"Create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/v1/Person/Update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"v1",
+								"Person",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/v1/Person/Delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"v1",
+								"Person",
+								"Delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/v1/Client/GetAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"v1",
+								"Client",
+								"GetAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/v1/Client/GetById?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"v1",
+								"Client",
+								"GetById"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/v1/Client/Create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"v1",
+								"Client",
+								"Create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/v1/Client/Update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"v1",
+								"Client",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/v1/Client/Delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"v1",
+								"Client",
+								"Delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movement",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/v1/Movement/GetAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"v1",
+								"Movement",
+								"GetAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/v1/Movement/GetById?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"v1",
+								"Movement",
+								"GetById"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/v1/Movement/Create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"v1",
+								"Movement",
+								"Create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"date\": \"2025-08-25T02:32:52.893Z\",\r\n  \"transaction_type\": \"string\",\r\n  \"amount\": 0,\r\n  \"balance\": 0,\r\n  \"account_id\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5134/api/v1/Movement/Update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"v1",
+								"Movement",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/v1/Movement/Delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"v1",
+								"Movement",
+								"Delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/v1/Account/GetAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"v1",
+								"Account",
+								"GetAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/v1/Account/GetById?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"v1",
+								"Account",
+								"GetById"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"account_number\": 0,\r\n  \"type\": \"string\",\r\n  \"initial_balance\": 0,\r\n  \"status\": true,\r\n  \"client_id\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5134/api/v1/Account/Create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"v1",
+								"Account",
+								"Create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/v1/Account/Update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"v1",
+								"Account",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/v1/Account/Delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"v1",
+								"Account",
+								"Delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
