@@ -1,16 +1,16 @@
 <app-navbar></app-navbar>
 <div class="layout">
     <div class="layout__menu">
-        <div class="layout__menu-item" (click)="redirect('/cliente')">
+        <div class="layout__menu-item" (click)="redirect(clientRoutes.LIST)">
             Cliente
         </div>
-        <div class="layout__menu-item" (click)="redirect('/cuenta')">
+        <div class="layout__menu-item" (click)="redirect(accountRoutes.LIST)">
             Cuentas
         </div>
-        <div class="layout__menu-item" (click)="redirect('/movimiento')">
+        <div class="layout__menu-item" (click)="redirect(movementRoutes.LIST)">
             Movimientos
         </div>
-        <div class="layout__menu-item" (click)="redirect('/reporte')">
+        <div class="layout__menu-item" (click)="redirect(reportRoutes.LIST)">
             Reportes
         </div>
     </div>

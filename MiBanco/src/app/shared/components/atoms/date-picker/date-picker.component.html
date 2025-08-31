@@ -1,0 +1,12 @@
+<div class="float-input">
+  <input
+    type="date"
+    [name]="name"
+    [id]="inputId"
+    [formControl]="control"
+    [ngClass]="{
+        invalid: labelError,
+    }"
+  />
+  <label [for]="inputId">{{ label }}</label>
+</div>

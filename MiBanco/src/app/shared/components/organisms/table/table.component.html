@@ -21,16 +21,34 @@
         @for (data of dataSource; track $index) {
             <tr>
                 @for (column of columns; track $index) {
-                    @if(column.header =='actions'){
-                        <td>
-                            <ng-container
-                                *ngTemplateOutlet="customActionsTemplate; context: { $implicit: data }"
-                            ></ng-container>
-                        </td>
-                    } @else {
-                        <td>
-                            {{ data[column.field] }}
-                        </td>
+                    @switch (column?.type) {
+						@case ('actions') {
+                            <td>
+                                <ng-container
+                                    *ngTemplateOutlet="customActionsTemplate; context: { $implicit: data }"
+                                ></ng-container>
+                            </td>
+                        }
+                        
+						@case ('date') {
+                            <td>
+                            	@if (data[column.field] && data[column.field] !== '') {
+                                    <div class="flex gap-2 align-items-center">
+                                        <i class="pi pi-calendar icon-calendar"></i>
+                                        <span>{{ data[column.field] | date: 'dd/MM/yyyy' : '+0000' }}</span>
+                                    </div>
+                                } @else {
+                                    <span>-</span>
+                                }
+                            </td>
+                        }
+
+                        @default {
+                            <td>
+                                {{ data[column.field] }}
+                            </td>
+						}
+
                     }
                 }
             </tr>

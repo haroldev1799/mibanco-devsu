@@ -6,9 +6,15 @@ import { HttpErrorInterceptor } from './core/interceptors/interceptor-error';
 import { HttpAuthInterceptor } from './core/interceptors/interceptor-http';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { ClientProviders } from './modules/client/client.providers';
+import { AccountsProviders } from './modules/account/account.providers';
+import { MovementsProviders } from './modules/movement/movement.providers';
+import { ReportProviders } from './modules/report/report.providers';
 
 const providers = [
-  ...ClientProviders
+  ...ClientProviders,
+  ...AccountsProviders,
+  ...MovementsProviders,
+  ...ReportProviders
 ];
 
 export const appConfig: ApplicationConfig = {

@@ -1,11 +1,11 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { HeroesCreateComponent } from './client-create.component';
-import { HeroesRepository } from '@app/modules/heroes/domain/repository/heroes.repository';
+import { ClientCreateComponent } from './client-create.component';
+import { ClientRepository } from '@app/modules/client/domain/repository/client.repository';
 import { Router } from '@angular/router';
-import { HeroForm } from '@app/modules/heroes/domain/dto/heroes.dto';
-import { HEROE_ROUTE_NAMES_GLOBAL } from '@app/modules/heroes/heroes.routenames';
+import { Client } from '@app/modules/client/domain/dto/client.dto';
+import { CLIENT_ROUTE_NAMES_GLOBAL } from '@app/modules/client/client.routenames';
 
-class MockHeroesRepository {
+class MockClientRepository {
   create = jasmine.createSpy('create');
 }
 
@@ -13,25 +13,25 @@ class MockRouter {
   navigate = jasmine.createSpy('navigate');
 }
 
-describe('HeroesCreateComponent', () => {
-  let component: HeroesCreateComponent;
-  let fixture: ComponentFixture<HeroesCreateComponent>;
-  let mockRepo: MockHeroesRepository;
+describe('ClientCreateComponent', () => {
+  let component: ClientCreateComponent;
+  let fixture: ComponentFixture<ClientCreateComponent>;
+  let mockRepo: MockClientRepository;
   let mockRouter: MockRouter;
 
   beforeEach(async () => {
-    mockRepo = new MockHeroesRepository();
+    mockRepo = new MockClientRepository();
     mockRouter = new MockRouter();
 
     await TestBed.configureTestingModule({
-      imports: [HeroesCreateComponent],
+      imports: [ClientCreateComponent], // standalone
       providers: [
-        { provide: HeroesRepository, useValue: mockRepo },
+        { provide: ClientRepository, useValue: mockRepo },
         { provide: Router, useValue: mockRouter }
       ]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(HeroesCreateComponent);
+    fixture = TestBed.createComponent(ClientCreateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -40,23 +40,28 @@ describe('HeroesCreateComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should call HeroesRepository.create and navigate on saveForm', () => {
-    const heroForm: HeroForm = {
-      name: 'Thor',
-      power: 'Thunder',
-      universe: 'Marvel',
-      age: 1500
+  it('should call ClientRepository.create and navigate on saveForm', () => {
+    const clientForm: Client = {
+      id: 'temp-id',
+      name: 'Juan Pérez',
+      gender: 'M',
+      age: '30',
+      identification: '12345678',
+      address: 'Av. Siempre Viva 742',
+      phone: '987654321',
+      password: 'secret',
+      status: true
     };
 
-    component.saveForm(heroForm);
+    component.saveForm(clientForm);
 
     expect(mockRepo.create).toHaveBeenCalled();
     expect(mockRepo.create).toHaveBeenCalledWith(jasmine.objectContaining({
-      ...heroForm,
+      ...clientForm,
       createdAt: jasmine.any(Number),
       updatedAt: jasmine.any(Number)
     }));
 
-    expect(mockRouter.navigate).toHaveBeenCalledWith([HEROE_ROUTE_NAMES_GLOBAL.LIST]);
+    expect(mockRouter.navigate).toHaveBeenCalledWith([CLIENT_ROUTE_NAMES_GLOBAL.LIST]);
   });
 });

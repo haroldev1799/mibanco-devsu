@@ -1,11 +1,13 @@
-using Autofac;
+﻿using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using ServicioMiBanco.API.Infrastructure.Filters;
 using ServiciosMiBanco.Infraestructure.CrossCutting.IoC.AutofacModules;
 using ServiciosMiBanco.Infrastructure.Persistence;
-using System.Reflection;
+using ServiciosMiBanco.Infraestructure.CrossCutting.Services.PDF;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,11 +18,10 @@ builder.Services.AddControllers(options =>
     options.Filters.Add<HttpGlobalExceptionFilter>();
 });
 
-
 builder.Services.AddDbContext<ServiciosMiBancoContext>(options =>
-    options.UseSqlServer(builder.Configuration["SFTConnectionString"], sqlOptions =>
+options.UseSqlServer(builder.Configuration["SFTConnectionString"], sqlOptions =>
 {
-    sqlOptions.MigrationsAssembly(typeof(Program).Assembly.FullName);
+    sqlOptions.MigrationsAssembly(typeof(ServiciosMiBancoContext).Assembly.FullName);
     sqlOptions.EnableRetryOnFailure(10, TimeSpan.FromSeconds(30), null);
 }));
 
@@ -38,15 +39,11 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     options.RequireHttpsMetadata = false;
     options.Audience = builder.Configuration["STS:API_SCOPE"];
 });
-//builder.Services.AddMediatR(cfg =>
-//{
-//    cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
-//});
 
+// === Autofac DI modules ===
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 builder.Host.ConfigureContainer<ContainerBuilder>(container =>
 {
-    //container.RegisterModule(new MediatorModule());
     container.RegisterModule(new MediatorModule());
     container.RegisterModule(new CommandsModule());
     container.RegisterModule(new ServicesModule());
@@ -55,15 +52,34 @@ builder.Host.ConfigureContainer<ContainerBuilder>(container =>
     container.RegisterModule(new RepositoryModule());
 });
 
+// registro de servicio PDF
+builder.Services.AddScoped<IPdfService, PdfServices>();
+
+builder.Services.AddSwaggerGen(c =>
+{
+    c.MapType<FileContentResult>(() => new OpenApiSchema
+    {
+        Type = "string",
+        Format = "binary"
+    });
+});
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+// === ⚡ Ejecutar migraciones automáticas al iniciar ===
+using (var scope = app.Services.CreateScope())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    var db = scope.ServiceProvider.GetRequiredService<ServiciosMiBancoContext>();
+    db.Database.Migrate(); // 👉 Crea BD y aplica migraciones en Docker
 }
+
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "MiBanco API v1");
+    c.RoutePrefix = "swagger"; // Swagger quedará en /swagger
+});
+//}
 
 app.UseCors(c => c.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 

@@ -16,6 +16,7 @@ export class ButtonComponent {
 	@Input() type: string = ButtonTypeComponent.BUTTON;
 	@Input() disabled = false;
 	@Input() isFullWidth = false;
+	@Input() img = '';
 
 	@Output() clicked = new EventEmitter();
 

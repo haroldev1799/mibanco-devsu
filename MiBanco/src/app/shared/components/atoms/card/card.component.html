@@ -7,13 +7,13 @@
 
   @if(customContent){
     <div class="card__content">
-      <p>Contenido del card.</p>
+      <ng-container *ngTemplateOutlet="customContent"></ng-container>
     </div>
   }
   
   @if(customActions){
     <div class="card__footer">
-      <button>Acción</button>
+      <ng-container *ngTemplateOutlet="customActions"></ng-container>
     </div>
   }
 </div>

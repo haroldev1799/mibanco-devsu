@@ -10,3 +10,4 @@ C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanc
 C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanco.Infraestructure.CrossCutting.Utility\obj\Debug\net8.0\refint\ServiciosMiBanco.Infraestructure.CrossCutting.Utility.dll
 C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanco.Infraestructure.CrossCutting.Utility\obj\Debug\net8.0\ServiciosMiBanco.Infraestructure.CrossCutting.Utility.pdb
 C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanco.Infraestructure.CrossCutting.Utility\obj\Debug\net8.0\ref\ServiciosMiBanco.Infraestructure.CrossCutting.Utility.dll
+C:\Users\User\source\repos\haroldev1799\mibanco-devsu\MiBancoApi\ServiciosMiBanco.Infraestructure.CrossCutting.Utility\obj\Debug\net8.0\ServiciosMiBanco.Infraestructure.CrossCutting.Utility.csproj.AssemblyReference.cache

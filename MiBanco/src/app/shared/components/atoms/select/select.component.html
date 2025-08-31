@@ -1,0 +1,14 @@
+<div class="float-select">
+  <select
+    [id]="selectId"
+    [formControl]="control"
+    [ngClass]="{ invalid: labelError }"
+    [style]="{width: isFullWidth ? '100%' : 'auto'}"
+    required>
+    <option value="" disabled selected hidden></option>
+    <option *ngFor="let option of options" [value]="option.value">
+      {{ option.name }}
+    </option>
+  </select>
+  <label for="selectId">{{ label }}</label>
+</div>

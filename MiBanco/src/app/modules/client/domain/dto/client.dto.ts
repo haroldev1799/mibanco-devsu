@@ -2,26 +2,30 @@ import { HttpListResponse, HttpObjectResponse } from "@app/shared/types/response
 
 export interface Client {
   id: string;
-  password: string;
-  status: string;
-  person_id: number;
   name: string;
   gender: string;
-  age: number;
+  age: string;
   identification: string;
   address: string;
   phone: string;
+  password: string;
+  status: boolean;
 }
 
 export interface ClientForm {
+  id: string;
   name: string;
-  power?: string;
-  universe?: 'Marvel' | 'DC' | 'Other';
-  age: number;
+  gender: string;
+  age: string;
+  identification: number;
+  address: string;
+  phone: string;
+  password: number;
+  status: string;
 }
 
 export type CreateClientRequest = Omit<Client, 'id'>;
-export type UpdateClientRequest = Omit<Client, 'createdAt'>;
+export type UpdateClientRequest = Omit<Client, ''>;
 export type DeleteClientRequest = Pick<Client, 'id'>;
 
 export type ListClientResponse = HttpListResponse<Client>;

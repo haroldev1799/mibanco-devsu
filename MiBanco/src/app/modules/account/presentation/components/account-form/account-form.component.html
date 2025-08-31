@@ -1,0 +1,62 @@
+<app-card [title]="title" [customActionsClass]="actions_class">
+    <ng-template #customContent>
+        <form class="mt-4">
+            <app-input
+                label="Numero de cuenta"
+                [addRequired]="true"
+                [type]="'number'"
+                [control]="formGroup.controls[ACCOUNT_FORM.account_number]"
+                [min]="1"
+                [max]="100"
+                autocomplete="off"
+            ></app-input>
+            <app-select
+                label="Tipo de cuenta"
+                [addRequired]="true"
+                [options]="optionsType"
+                [control]="formGroup.controls[ACCOUNT_FORM.type]"
+                autocomplete="off"
+            ></app-select>
+            @if(!isEdit){
+                <app-input
+                    label="Monto inicial"
+                    [addRequired]="true"
+                    [type]="'number'"
+                    [control]="formGroup.controls[ACCOUNT_FORM.initial_balance]"
+                    [min]="1"
+                    [max]="100"
+                    autocomplete="off"
+                ></app-input>
+            }
+            <app-input
+                label="Limite Diario"
+                [addRequired]="true"
+                [type]="'number'"
+                [control]="formGroup.controls[ACCOUNT_FORM.daily_limit_amount]"
+                [min]="1"
+                [max]="10000"
+                autocomplete="off"
+            ></app-input>
+            <app-select
+                label="Cliente"
+                [addRequired]="true"
+                [options]="options"
+                [control]="formGroup.controls[ACCOUNT_FORM.client_id]"
+                autocomplete="off"
+            ></app-select>
+        </form>
+    </ng-template>
+    <ng-template #customActions>
+        <app-button
+            [classList]="'mr-4'"
+            [label]="'Cancelar'"
+            [severity]="buttonType.LIGHT"
+            (clicked)="clickBtnCancel()"
+        ></app-button>
+        <app-button
+            [label]="'Guardar'"
+            [severity]="buttonType.PRIMARY"
+            (clicked)="clickBtnSave()"
+        ></app-button>
+    </ng-template>
+</app-card>

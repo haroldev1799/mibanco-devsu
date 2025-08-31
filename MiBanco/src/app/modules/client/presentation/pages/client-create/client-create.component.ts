@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { ClientFormComponent } from '../../components/hero-form/client-form.component';
+import { ClientFormComponent } from '../../components/client-form/client-form.component';
 import { ClientRepository } from '@app/modules/client/domain/repository/client.repository';
 import { CLIENT_ROUTE_NAMES_GLOBAL } from '@app/modules/client/client.routenames';
 
@@ -12,17 +12,23 @@ import { CLIENT_ROUTE_NAMES_GLOBAL } from '@app/modules/client/client.routenames
 })
 export class ClientCreateComponent {
 
-	private heroesRepository = inject(ClientRepository);
+	private clientRepository = inject(ClientRepository);
   private router = inject(Router);
 
   title: string = 'Registrar Héroe';
 
   saveForm(event: any){
-    this.heroesRepository.create({
+    console.log(event, ' evemnt')
+    this.clientRepository.create({
       ...event,
-      createdAt: Date.now(),
-      updatedAt: Date.now(),
+    }).subscribe( {
+      next:(res) => {
+        console.log(res, ' res')
+      },
+      complete:() => this.router.navigate([`${CLIENT_ROUTE_NAMES_GLOBAL.LIST}`]),
+      error:(e) => {
+        console.log(e)
+      }
     });
-    this.router.navigate([`${CLIENT_ROUTE_NAMES_GLOBAL.LIST}`]);
   }
 }

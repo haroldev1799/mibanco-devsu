@@ -14,7 +14,8 @@ namespace ServicioMiBanco.Application.Commands.AccountCommand
 
         public async Task<bool> Handle(UpdateAccountCommand request, CancellationToken cancellationToken)
         {
-            var account = new Account(request.account_number, request.type, request.initial_balance, request.current_balance, request.daily_limit_amount, request.status, request.client_id);
+            var account = await _accountRepository.GetAsync(request.id);
+            account.update(request.account_number, request.type, request.daily_limit_amount, request.status, request.client_id);
             await _accountRepository.Update(account);
             return await _accountRepository.UnitOfWork.SaveEntitiesAsync();
         }

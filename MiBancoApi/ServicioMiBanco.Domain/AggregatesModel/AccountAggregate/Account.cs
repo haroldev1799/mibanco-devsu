@@ -39,6 +39,16 @@ namespace ServicioMiBanco.Domain.AggregatesModel.AccountAggregate
             Movements = new List<Movement>();
         }
 
+        public void update(long account_number, string type, decimal daily_limit_amount, bool status, long client_id)
+        {
+            this.account_number = account_number;
+            this.type = type;
+            this.daily_limit_amount = daily_limit_amount;
+            this.status = status;
+            this.client_id = client_id;
+            Movements = new List<Movement>();
+        }
+
         public void UpdateCurrentBalance(decimal current_balance)
         {
             this.current_balance = current_balance;

@@ -2,6 +2,7 @@
 using ServicioMiBanco.Application.Queries.AccountQueries;
 using ServicioMiBanco.Application.Queries.ClientQueries;
 using ServicioMiBanco.Application.Queries.MovementQueries;
+using ServicioMiBanco.Application.Queries.ReportQueries;
 
 namespace ServiciosMiBanco.Infraestructure.CrossCutting.IoC.AutofacModules
 {
@@ -30,6 +31,12 @@ namespace ServiciosMiBanco.Infraestructure.CrossCutting.IoC.AutofacModules
 
             builder.Register(c => new MovementQueries(_queriesConnectionString))
                   .As<IMovementQueries>()
+                  .InstancePerLifetimeScope();
+            #endregion
+            #region Report
+
+            builder.Register(c => new ReportQueries(_queriesConnectionString))
+                  .As<IReportQueries>()
                   .InstancePerLifetimeScope();
             #endregion
         }

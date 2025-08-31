@@ -1,0 +1,55 @@
+// Variables
+$primary-color: #3f51b5
+$label-color: #777
+$border-color: #ccc
+$error-color: #e53935
+
+
+.float-select
+  position: relative
+  margin: 20px 0
+  width: 100%
+  min-width: 200px
+  margin-right: 10px
+  select
+    width: 100%
+    padding: 12px 10px
+    font-size: 16px
+    border: 1px solid $border-color
+    border-radius: 4px
+    background: white
+    outline: none
+    appearance: none
+    cursor: pointer
+
+    &:focus
+      border-color: $primary-color
+
+    // sube el label al tener valor o foco
+    &:focus + label,
+    &:valid + label
+      top: -8px
+      left: 8px
+      font-size: 12px
+      color: $primary-color
+      background: white
+      padding: 0 4px
+      transform: translateY(-10%)
+
+    &.invalid
+      border-color: $error-color
+
+      &:focus + label,
+      &:valid + label
+        color: $error-color
+
+  label
+    position: absolute
+    left: 12px
+    top: 50%
+    transform: translateY(-50%)   // 🔑 el label arranca centrado
+    color: $label-color
+    pointer-events: none
+    transition: all 0.2s ease
+    font-size: 16px
+    background: transparent

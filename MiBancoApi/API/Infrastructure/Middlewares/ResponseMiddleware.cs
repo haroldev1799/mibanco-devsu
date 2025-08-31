@@ -22,8 +22,18 @@ public class ResponseMiddleware
         {
             await _next(context);
 
-            // leer lo que escribió el controller
             memoryStream.Position = 0;
+
+            var contentType = context.Response.ContentType ?? string.Empty;
+            if (contentType.StartsWith("application/pdf") ||
+                contentType.StartsWith("application/octet-stream") ||
+                contentType.StartsWith("image/"))
+            {
+                memoryStream.Position = 0;
+                await memoryStream.CopyToAsync(originalBodyStream);
+                return;
+            }
+
             var responseBody = await new StreamReader(memoryStream).ReadToEndAsync();
 
             object? data = null;
@@ -41,11 +51,10 @@ public class ResponseMiddleware
 
             if (context.Response.StatusCode == (int)HttpStatusCode.NoContent)
             {
-                context.Response.Body = originalBodyStream; // restauramos
-                return; // no escribimos nada porque 204 no lo permite
+                context.Response.Body = originalBodyStream;
+                return;
             }
 
-            // 👇 aseguramos que siempre haya algo
             if (data == null)
                 data = new { };
 
@@ -56,7 +65,7 @@ public class ResponseMiddleware
             );
 
             context.Response.ContentType = "application/json";
-            context.Response.Body = originalBodyStream; // restauramos
+            context.Response.Body = originalBodyStream;
             var json = JsonSerializer.Serialize(apiResponse);
             await context.Response.WriteAsync(json);
         }

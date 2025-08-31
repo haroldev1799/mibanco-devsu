@@ -1,0 +1,36 @@
+<div class="report__header">
+    <h2>Reportes</h2>
+</div>
+<div class="filter">
+    <app-select
+        label="Cliente"
+        [addRequired]="true"
+        [options]="optionsClient"
+        [control]="formGroup.controls[FILTER_FORM.client_id]"
+        [isFullWidth]="true"
+        autocomplete="off"
+    ></app-select>
+    <app-select
+        label="Cuenta"
+        [addRequired]="true"
+        [options]="optionsAccount"
+        [control]="formGroup.controls[FILTER_FORM.account_id]"
+        [isFullWidth]="true"
+        autocomplete="off"
+    ></app-select>
+    <app-date-picker
+        label="Fecha del movimiento"
+        [addRequired]="true"
+        [control]="formGroup.controls[FILTER_FORM.date]"
+        autocomplete="off"
+    ></app-date-picker>
+</div>
+<app-table [columns]="columns" [dataSource]="dataSource" [messageEmpty]="message.messaeEmpty" [filter]="true">
+    <ng-template #actionsTemplate let-rowData>
+        <app-button
+            [data]="btnData"
+            [severity]="buttonType.PRIMARY"
+            (clicked)="download()"
+        ></app-button>
+    </ng-template>
+</app-table>

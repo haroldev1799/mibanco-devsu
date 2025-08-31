@@ -7,6 +7,18 @@ export const routes: Routes = [
 		loadChildren: () => import('./modules/client/client.routes').then((m) => m.routes),
 	},
 	{
+		path: APP_ROUTE_NAMES.ACCOUNT,
+		loadChildren: () => import('./modules/account/account.routes').then((m) => m.routes),
+	},
+	{
+		path: APP_ROUTE_NAMES.MOVEMENTS,
+		loadChildren: () => import('./modules/movement/movement.routes').then((m) => m.routes),
+	},
+	{
+		path: APP_ROUTE_NAMES.REPORTES,
+		loadChildren: () => import('./modules/report/rerpot.routes').then((m) => m.routes),
+	},
+	{
 		path: '**',
 		redirectTo: APP_ROUTE_NAMES.CLIENT,
 	},

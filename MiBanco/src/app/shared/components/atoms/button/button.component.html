@@ -15,7 +15,10 @@
 	}"
 >
 	@if (data && !!data.img) {
-		<img [src]="'assets/svg/buttons' + data.img" [alt]="data.img" loading="lazy" />
+		<img [src]="'assets/svg/buttons/' + data.img" [alt]="data.img" loading="lazy" 
+			[style]="{
+				width: data?.style?.width ?? 'auto',
+			}"/>
 	} @else {
 		{{label}}
 	}

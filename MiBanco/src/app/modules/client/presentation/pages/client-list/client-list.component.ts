@@ -45,14 +45,13 @@ export class ClientListComponent implements OnInit {
   }
 
   handleOption($event: number, rowData: any) {
+    console.log($event)
     switch ($event) {
       case OPTIONS_CODE.EDIT:
         this.router.navigate([`${CLIENT_ROUTE_NAMES_GLOBAL.EDIT}/${rowData.id}`]);
         break;
       case OPTIONS_CODE.DELETE:
-        this.modalService.open(MODAL_MESSAGES.modalDelete, () => {
-          this._delete(rowData.id);
-        });
+        this._delete(rowData.id);
         break;
     
       default:
@@ -65,11 +64,10 @@ export class ClientListComponent implements OnInit {
   }
 
   private _delete(id: string) {
-    // this.loaderService.show();
-    // this.heroesRepository.delete(id).subscribe({
-    //   next:() => this.ngOnInit(),
-    //   complete: () => this.loaderService.hide()
-    // });
+    this.clientRepository.delete({id}).subscribe({
+      next:() => this.ngOnInit(),
+      complete: () => this.loaderService.hide()
+    });
   }
 
 }

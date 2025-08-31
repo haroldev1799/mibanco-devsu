@@ -1,15 +1,13 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { of } from 'rxjs';
-import { HeroesEditComponent } from './client-edit.component';
-import { HeroesRepository } from '@app/modules/heroes/domain/repository/heroes.repository';
+import { ClientEditComponent } from './client-edit.component';
+import { ClientRepository } from '@app/modules/client/domain/repository/client.repository';
 import { ActivatedRoute, Router } from '@angular/router';
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { HeroForm, DetailHeroResponse, Hero } from '@app/modules/heroes/domain/dto/heroes.dto';
-import { SnackbarComponent } from '@app/shared/components/atoms/snackbar/snackbar.component';
+import { Client, DetailClientResponse } from '@app/modules/client/domain/dto/client.dto';
 
-describe('HeroesEditComponent', () => {
-  let component: HeroesEditComponent;
-  let fixture: ComponentFixture<HeroesEditComponent>;
+describe('ClientEditComponent', () => {
+  let component: ClientEditComponent;
+  let fixture: ComponentFixture<ClientEditComponent>;
   let mockRepo: any;
   let mockRouter: any;
   let mockRoute: any;
@@ -18,7 +16,7 @@ describe('HeroesEditComponent', () => {
   beforeEach(async () => {
     mockRepo = {
       update: jasmine.createSpy('update'),
-      getById: jasmine.createSpy('getById').and.returnValue(of(null)) // default
+      getById: jasmine.createSpy('getById').and.returnValue(of(null)) // por defecto retorna null
     };
     mockRouter = jasmine.createSpyObj('Router', ['navigate']);
     mockRoute = {
@@ -27,34 +25,42 @@ describe('HeroesEditComponent', () => {
     mockSnackBar = jasmine.createSpyObj('MatSnackBar', ['openFromComponent']);
 
     await TestBed.configureTestingModule({
-      imports: [HeroesEditComponent], // standalone
+      imports: [ClientEditComponent], // standalone
       providers: [
-        { provide: HeroesRepository, useValue: mockRepo },
+        { provide: ClientRepository, useValue: mockRepo },
         { provide: Router, useValue: mockRouter },
         { provide: ActivatedRoute, useValue: mockRoute },
-        { provide: MatSnackBar, useValue: mockSnackBar }
       ]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(HeroesEditComponent);
+    fixture = TestBed.createComponent(ClientEditComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create and call getById with route param', () => {
     expect(component).toBeTruthy();
-    expect(component['heroId']).toBe('123'); // del ActivatedRoute
+    expect((component as any).clientId).toBe('123'); // viene de ActivatedRoute
     expect(mockRepo.getById).toHaveBeenCalledWith('123');
   });
 
-  it('should open snackbar when getById returns null', () => {
-    mockRepo.getById.and.returnValue(of(null));
+  it('should call update on save', () => {
+    const mockClient: Client = {
+      id: '123',
+      name: 'Juan Pérez',
+      gender: 'M',
+      age: '30',
+      identification: '987654',
+      address: 'Calle Falsa 123',
+      phone: '999888777',
+      password: 'secret',
+      status: true
+    };
 
-    (component as any)._getDetail();
+    mockRepo.update.and.returnValue(of({ success: true, data: mockClient }));
 
-    expect(mockSnackBar.openFromComponent).toHaveBeenCalledWith(SnackbarComponent, {
-      duration: 2000,
-      data: { message: 'No se encontró la héroe.' }
-    });
+    (component as any)._update(mockClient);
+
+    expect(mockRepo.update).toHaveBeenCalledWith('123', mockClient);
   });
 });

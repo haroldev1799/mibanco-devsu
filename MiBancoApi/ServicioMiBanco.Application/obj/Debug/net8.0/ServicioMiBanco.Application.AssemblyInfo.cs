@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ServicioMiBanco.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0d49b505933b7e4d7f0b8a967d71fb8710ec1a4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e98b3faac3325eb90e2e367356cc24fb7d65ec61")]
 [assembly: System.Reflection.AssemblyProductAttribute("ServicioMiBanco.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ServicioMiBanco.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

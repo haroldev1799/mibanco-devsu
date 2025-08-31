@@ -1,0 +1,43 @@
+<app-card [title]="title" [customActionsClass]="actions_class">
+    <ng-template #customContent>
+        <form class="mt-4">
+            <app-select
+                label="Cuenta"
+                [addRequired]="true"
+                [control]="formGroup.controls[MOVEMENT_FORM.AccountId]"
+                [options]="accountSelect"
+                autocomplete="off"
+                [disabled]="true"
+            ></app-select>
+            <app-select
+                label="Tipo de Transacción"
+                [addRequired]="true"
+                [control]="formGroup.controls[MOVEMENT_FORM.TransactionType]"
+                [options]="typeTransactionSelect"
+                autocomplete="off"
+                [disabled]="true"
+            ></app-select>
+            <app-input
+                label="Monto"
+                [addRequired]="true"
+                [control]="formGroup.controls[MOVEMENT_FORM.Amount]"
+                [maxLength]="100"
+                autocomplete="off"
+                [disabled]="true"
+            ></app-input>
+        </form>
+    </ng-template>
+    <ng-template #customActions>
+        <app-button
+            [classList]="'mr-4'"
+            [label]="'Cancelar'"
+            [severity]="buttonType.LIGHT"
+            (clicked)="clickBtnCancel()"
+        ></app-button>
+        <app-button
+            [label]="'Guardar'"
+            [severity]="buttonType.PRIMARY"
+            (clicked)="clickBtnSave()"
+        ></app-button>
+    </ng-template>
+</app-card>

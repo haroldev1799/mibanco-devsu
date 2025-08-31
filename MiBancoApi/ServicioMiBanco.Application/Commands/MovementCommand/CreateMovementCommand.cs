@@ -7,8 +7,6 @@ namespace ServicioMiBanco.Application.Commands.MovementCommand
     public class CreateMovementCommand : IRequest<bool>
     {
         [DataMember]
-        public DateTime date { get; set; }
-        [DataMember]
         public string transaction_type { get; set; }
         [DataMember]
         public decimal amount { get; set; }

@@ -1,0 +1,46 @@
+﻿version: '3.9'
+
+services:
+  serviciomibanco.api:   # 👈 aquí en lugar de "api"
+    build:
+      context: .
+      dockerfile: API/Dockerfile
+    container_name: mibanco-api
+    ports:
+      - "5000:8080"   # Swagger accesible en http://localhost:5000/swagger
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - SFTConnectionString=Server=sqlserver,1433;Database=MiBancoDB;User Id=sa;Password=Root1234!;TrustServerCertificate=True;
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Root1234!
+    ports:
+      - "1433:1433"
+    volumes:
+      - sql_data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P Root1234! -C -Q 'SELECT 1'"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 40s
+
+  frontend:
+    build:
+      context: ../MiBanco
+      dockerfile: Dockerfile
+    container_name: mibanco-frontend
+    ports:
+      - "4200:80"
+    depends_on:
+      - api
+
+volumes:
+  sql_data:

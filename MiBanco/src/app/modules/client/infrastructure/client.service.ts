@@ -12,22 +12,22 @@ export class ClientRepositoryService extends ClientRepository  {
   protected url = `${URL_BACKEND}Client/`;
 
   getAll(): Observable<ListClientResponse> {
-	return this.http.get<ListClientResponse>(`${this.url}GetAll`);
+	  return this.http.get<ListClientResponse>(`${this.url}GetAll`);
   }
 
   getById(id: string): Observable<DetailClientResponse | null> {
-	return this.http.get<DetailClientResponse>(`${this.url}GetById?id=${id}`);
+	  return this.http.get<DetailClientResponse>(`${this.url}GetById?id=${id}`);
   }
 
   create(client: CreateClientRequest): Observable<CreateClientResponse> {
-	return this.http.post<CreateClientResponse>(`${this.url}Create`, client);
+	  return this.http.post<CreateClientResponse>(`${this.url}Create`, client);
   }
 
   update(client: UpdateClientRequest): Observable<UpdateClientResponse> {
-	return this.http.post<UpdateClientResponse>(`${this.url}Update`, client);
+	  return this.http.put<UpdateClientResponse>(`${this.url}Update`, client);
   }
 
   delete(client: DeleteClientRequest): Observable<DeleteClientResponse> {
-	return this.http.delete<DeleteClientResponse>(`${this.url}Delete`, { body: client});
+	  return this.http.delete<DeleteClientResponse>(`${this.url}Delete`, { body: client});
   }
 }

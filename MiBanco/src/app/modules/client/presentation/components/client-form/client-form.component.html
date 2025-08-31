@@ -1,0 +1,70 @@
+<app-card [title]="title" [customActionsClass]="actions_class">
+    <ng-template #customContent>
+        <form class="mt-4">
+            <div class="grid">
+                <app-input
+                    label="Nombre"
+                    [addRequired]="true"
+                    [control]="formGroup.controls[CLIENT_FORM.Name]"
+                    [maxLength]="100"
+                    autocomplete="off"
+                ></app-input>
+                <app-input
+                    label="Sexo"
+                    [addRequired]="true"
+                    [control]="formGroup.controls[CLIENT_FORM.Gender]"
+                    [maxLength]="100"
+                    autocomplete="off"
+                ></app-input>
+                <app-input
+                    label="Edad"
+                    [addRequired]="true"
+                    [control]="formGroup.controls[CLIENT_FORM.Age]"
+                    [maxLength]="100"
+                    autocomplete="off"
+                ></app-input>
+                <app-input
+                    label="Identificacion"
+                    [addRequired]="true"
+                    [control]="formGroup.controls[CLIENT_FORM.Identification]"
+                    [maxLength]="100"
+                    autocomplete="off"
+                ></app-input>
+                <app-input
+                    label="Direccion"
+                    [addRequired]="true"
+                    [control]="formGroup.controls[CLIENT_FORM.Addres]"
+                    [maxLength]="100"
+                    autocomplete="off"
+                ></app-input>
+                <app-input
+                    label="Telefono"
+                    [addRequired]="true"
+                    [control]="formGroup.controls[CLIENT_FORM.Phone]"
+                    [maxLength]="100"
+                    autocomplete="off"
+                ></app-input>
+                <app-input
+                    label="Contraseña"
+                    [addRequired]="true"
+                    [control]="formGroup.controls[CLIENT_FORM.Password]"
+                    [maxLength]="100"
+                    autocomplete="off"
+                ></app-input>
+            </div>
+        </form>
+    </ng-template>
+    <ng-template #customActions>
+        <app-button
+            [classList]="'mr-4'"
+            [label]="'Cancelar'"
+            [severity]="buttonType.LIGHT"
+            (clicked)="clickBtnCancel()"
+        ></app-button>
+        <app-button
+            [label]="'Guardar'"
+            [severity]="buttonType.PRIMARY"
+            (clicked)="clickBtnSave()"
+        ></app-button>
+    </ng-template>
+</app-card>

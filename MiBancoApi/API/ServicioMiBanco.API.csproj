@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>60e6f4c8-0a77-42b2-89b5-7064aa9e6007</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +22,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
@@ -32,5 +34,8 @@
     <ProjectReference Include="..\ServiciosMiBanco.Infraestructure.CrossCutting.Utility\ServiciosMiBanco.Infraestructure.CrossCutting.Utility.csproj" />
     <ProjectReference Include="..\ServiciosMiBanco.Infrastructure.Persistence\ServiciosMiBanco.Infrastructure.Persistence.csproj" />
   </ItemGroup>
-
+  
+  <ItemGroup>
+    <Content Include="Templates\**\*.html" CopyToOutputDirectory="Always" />
+  </ItemGroup>
 </Project>

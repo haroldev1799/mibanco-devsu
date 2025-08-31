@@ -56,7 +56,7 @@ namespace ServicioMiBanco.Application.Commands.MovementCommand
 
             // 5. Crear movimiento
             var movement = new Movement(
-                request.date,
+                new DateTime(),
                 request.transaction_type,
                 request.amount,
                 newBalance,

@@ -1,0 +1,13 @@
+import { APP_ROUTE_NAMES } from 'src/app/app.routenames';
+
+export enum REPORT_ROUTE_NAMES {
+	LIST = 'listado',
+	REGISTER = 'crear',
+	EDIT = 'editar'
+}
+
+export const REPORT_ROUTE_NAMES_GLOBAL = {
+	LIST: `${APP_ROUTE_NAMES.REPORTES}/${REPORT_ROUTE_NAMES.LIST}`,
+	REGISTER: `${APP_ROUTE_NAMES.REPORTES}/${REPORT_ROUTE_NAMES.REGISTER}`,
+	EDIT: `${APP_ROUTE_NAMES.REPORTES}/${REPORT_ROUTE_NAMES.EDIT}`,
+};

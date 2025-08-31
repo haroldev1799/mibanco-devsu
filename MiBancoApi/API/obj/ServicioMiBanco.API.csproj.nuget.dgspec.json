@@ -107,6 +107,10 @@
               "target": "Package",
               "version": "[1.22.1, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
@@ -501,6 +505,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "itext7.bouncy-castle-adapter": {
+              "target": "Package",
+              "version": "[9.2.0, )"
+            },
+            "itext7.pdfhtml": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -566,6 +580,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
