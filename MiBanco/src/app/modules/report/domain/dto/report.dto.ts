@@ -9,6 +9,7 @@ export interface Reports {
   daily_limit_amount: number;
   initial_balance: number;
   amount: number;
+  movementId: number;
   date: Date;
   transaction_type: string;
   balance: number;

@@ -1,0 +1,8 @@
+##Instrucciones
+
+- Tener abierto el docker desktop, el docker ya esta configurado, cuando se corra el API se creara la base de datos y se desplegará la api y el front.
+- El puerto del api es http://localhost:5000/swagger/index.html
+- El puerto del front es http://localhost:4200
+- El repositorio es https://github.com/haroldev1799/mibanco-devsu, ahi se encontrarán las colecciones de postman, y el script de base de datos, pero la base
+  ya se levanta sola mediante migraciones en EF.
+- El proyecto de iniciarse apuntado a que el proyecto de docker sea el proyecto de inicio.

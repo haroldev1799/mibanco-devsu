@@ -69,6 +69,7 @@ namespace ServiciosMiBanco.Infrastructure.Persistence.Migrations
                 AS
                 BEGIN
                     SELECT *,
+                        M.Id as Id,
                         A.account_number as account,
                         P.name as client
                     FROM dbo.movement M
@@ -102,26 +103,34 @@ namespace ServiciosMiBanco.Infrastructure.Persistence.Migrations
 
             migrationBuilder.Sql(@"
                 CREATE PROCEDURE [dbo].[REPORT_GET]
-                    @ClienteId BIGINT = 0
+                    @ClientId BIGINT = NULL,
+                    @AccountId BIGINT = NULL,
+                    @Date DATETIME = NULL,
+                    @MovementId BIGINT = NULL
                 AS
                 BEGIN
-                        SELECT
-                            C.Id as client_id,
-                            P.name AS client,
-                            A.account_number AS account,
-                            A.Id AS account_id,
-                            A.current_balance AS current_balance,
-                            A.daily_limit_amount AS daily_limit_amount,
-                            A.initial_balance AS initial_balance,
-                            M.amount AS amount,
-                            M.[date] AS [date],
-                            M.transaction_type AS transaction_type,
-                            M.balance AS balance
-                        FROM dbo.movement M
-                        INNER JOIN dbo.account A ON M.account_id = A.Id
-                        INNER JOIN dbo.client C ON A.client_id = C.Id
-                        INNER JOIN dbo.person P ON C.person_id = P.Id
-                        WHERE (@ClienteId = 0 OR C.Id = @ClienteId)
+                    SELECT
+                        C.Id as client_id,
+                        P.name AS client,
+                        A.account_number AS account,
+                        A.Id AS account_id,
+                        A.current_balance AS current_balance,
+                        A.daily_limit_amount AS daily_limit_amount,
+                        A.initial_balance AS initial_balance,
+                        M.amount AS amount,
+                        M.[Id] AS movementId,
+                        M.[date] AS [date],
+                        M.transaction_type AS transaction_type,
+                        M.balance AS balance
+                    FROM dbo.movement M
+                    INNER JOIN dbo.account A ON M.account_id = A.Id
+                    INNER JOIN dbo.client C ON A.client_id = C.Id
+                    INNER JOIN dbo.person P ON C.person_id = P.Id
+                    WHERE
+                        (@ClientId IS NULL OR C.Id = @ClientId)
+                        AND (@AccountId IS NULL OR A.Id = @AccountId)
+                        AND (@MovementId IS NULL OR M.Id = @MovementId)
+                        AND (@Date IS NULL OR CAST(M.[date] AS DATE) = CAST(@Date AS DATE));
                 END
             ");
         }

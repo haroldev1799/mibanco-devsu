@@ -10,12 +10,12 @@ export class ReportRepositoryService extends ReportRepository  {
   private readonly http = inject(HttpClient);
   protected url = `${URL_BACKEND}Reporte/`;
 
-  getAll(): Observable<ReportResponse> {
-	return this.http.get<ReportResponse>(`${this.url}GetAll`);
+  getAll(clientId?: string, accountId?: string, date?: string): Observable<ReportResponse> {
+	return this.http.get<ReportResponse>(`${this.url}GetAll?clientId=${clientId}&accountId=${accountId}&date=${date}`);
   }
 
-  generateReport(id: string): Observable<Blob> {
-    return this.http.post(`${this.url}GenerarReporte?id=${id}`, {}, {
+  generateReport(clientId?: string, accountId?: string, date?: string, movementId?: number): Observable<Blob> {
+    return this.http.post(`${this.url}GenerarReporte?clientId=${clientId}&accountId=${accountId}&date=${date}&movementId=${movementId}`, {}, {
         responseType: 'blob'
     });
   }

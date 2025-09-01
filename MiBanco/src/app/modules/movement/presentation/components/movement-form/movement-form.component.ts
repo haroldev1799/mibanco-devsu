@@ -2,8 +2,6 @@ import { Component, EventEmitter, inject, Input, OnChanges, Output, SimpleChange
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ButtonType } from '@app/shared/components/atoms/button/button.interface';
 import { Router } from '@angular/router';
-import { ModalMessageService } from '@app/shared/services/modal-message.service';
-import { MODAL_MESSAGES } from '@app/core/dictionaries/messages/messages-crud';
 import { MovementForm } from '@app/modules/movement/domain/dto/movement.dto';
 import { MOVEMENT_ROUTE_NAMES_GLOBAL } from '@app/modules/movement/movement.routenames';
 import { MOVEMENT_FORM, MOVEMENT_FORM_IMPORTS, SELECT_TYPE } from './movement-form.component.constant';

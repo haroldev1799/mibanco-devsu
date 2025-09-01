@@ -5,14 +5,8 @@ import { catchError } from 'rxjs/operators';
 import { HTTP_CODE } from '@core/enums/status.enum';
 import { DATA_MESSAGE_DEFAULT, MESSAGE_HTTP_ERROR } from '@core/constants/message-modal-error';
 import { END_POINTS_EXCLUDED, MESSAGE_ERROR_KEY, MESSAGE_HTTP } from '@core/enums/message-error.enum';
-import { LoaderService } from '@shared/services/loader.service';
 import { DataModalMessage } from '@components/molecules/modals/modal-message-ref/modal-message-ref.interface';
-import { ModalErrorService } from '@shared/services/modal-error.service';
-import { ModalErrorComponent } from '@app/shared/components/molecules/modals/modal-error/modal-error.component';
-import { ModalErrorMessage } from '@app/shared/components/molecules/modals/modal-error/modal-error.interface';
 export class HttpErrorInterceptor implements HttpInterceptor {
-	private modalMessageService = inject(ModalErrorService);
-	private loaderService = inject(LoaderService);
 	/* eslint-disable @typescript-eslint/no-explicit-any */
 	intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
 		return next.handle(req).pipe(
@@ -51,12 +45,8 @@ export class HttpErrorInterceptor implements HttpInterceptor {
 
 				if (!req.url.includes(END_POINTS_EXCLUDED.SEARCH)) {
 					
-					this.modalMessageService.setModalMessage(
-						{ status: true, data: { ...DATA_MESSAGE_DEFAULT, ...dataErrorMsg } },
-						ModalErrorComponent
-					);
+					console.log({ status: true, data: { ...DATA_MESSAGE_DEFAULT, ...dataErrorMsg }})
 				}
-				this.loaderService.hide();
 				return throwError(() => error);
 			}),
 		);

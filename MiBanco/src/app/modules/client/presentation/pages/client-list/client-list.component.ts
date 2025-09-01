@@ -7,9 +7,6 @@ import { ButtonType } from '@app/shared/components/atoms/button/button.interface
 import { OPTIONS_CODE } from '@app/core/enums/options.enum';
 import { Router } from '@angular/router';
 import { COLUMNS_CLIENT_LIST, MESSAGES } from './client-list.component.constants';
-import { LoaderService } from '@app/shared/services/loader.service';
-import { ModalMessageService } from '@app/shared/services/modal-message.service';
-import { MODAL_MESSAGES } from '@app/core/dictionaries/messages/messages-crud';
 import { ClientRepository } from '@app/modules/client/domain/repository/client.repository';
 import { CLIENT_ROUTE_NAMES_GLOBAL } from '@app/modules/client/client.routenames';
 
@@ -23,8 +20,6 @@ export class ClientListComponent implements OnInit {
 
 	private clientRepository = inject(ClientRepository);
 	private router = inject(Router);
-  private loaderService = inject(LoaderService);
-  private modalService = inject(ModalMessageService);
 
   dataSource:any[] = [];
 
@@ -35,12 +30,10 @@ export class ClientListComponent implements OnInit {
   message = MESSAGES;
 
   ngOnInit(): void {
-    this.loaderService.show();
     this.clientRepository.getAll().subscribe({
       next:(result: any) => {
         this.dataSource = [...result.data];
       },
-      complete:() => this.loaderService.hide(),
     });
   }
 
@@ -66,7 +59,6 @@ export class ClientListComponent implements OnInit {
   private _delete(id: string) {
     this.clientRepository.delete({id}).subscribe({
       next:() => this.ngOnInit(),
-      complete: () => this.loaderService.hide()
     });
   }
 

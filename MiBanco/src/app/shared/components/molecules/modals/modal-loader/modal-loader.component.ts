@@ -1,5 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
-import { LoaderService } from '@app/shared/services/loader.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-modal-loader',

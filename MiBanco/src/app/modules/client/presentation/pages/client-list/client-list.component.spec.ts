@@ -3,8 +3,6 @@ import { of } from 'rxjs';
 import { ClientListComponent } from './client-list.component';
 import { ClientRepository } from '@app/modules/client/domain/repository/client.repository';
 import { Router } from '@angular/router';
-import { LoaderService } from '@app/shared/services/loader.service';
-import { ModalMessageService } from '@app/shared/services/modal-message.service';
 import { OPTIONS_CODE } from '@app/core/enums/options.enum';
 import { MODAL_MESSAGES } from '@app/core/dictionaries/messages/messages-crud';
 
@@ -34,8 +32,6 @@ describe('ClientListComponent', () => {
       providers: [
         { provide: ClientRepository, useValue: mockRepo },
         { provide: Router, useValue: mockRouter },
-        { provide: LoaderService, useValue: mockLoader },
-        { provide: ModalMessageService, useValue: mockModal }
       ]
     }).compileComponents();
 

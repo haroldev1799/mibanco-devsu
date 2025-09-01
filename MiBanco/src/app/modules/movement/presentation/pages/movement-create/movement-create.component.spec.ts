@@ -1,62 +1,79 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { HeroesCreateComponent } from './movement-create.component';
-import { HeroesRepository } from '@app/modules/heroes/domain/repository/heroes.repository';
+import { MovementCreateComponent } from './movement-create.component';
 import { Router } from '@angular/router';
-import { HeroForm } from '@app/modules/heroes/domain/dto/heroes.dto';
-import { HEROE_ROUTE_NAMES_GLOBAL } from '@app/modules/heroes/heroes.routenames';
+import { MovementsRepository } from '@app/modules/movement/domain/repository/movement.repository';
+import { of } from 'rxjs';
+import { MovementForm } from '@app/modules/movement/domain/dto/movement.dto';
+import { SELECT_TYPE_MOVEMENT } from '../../components/movement-form/movement-form.component.constant';
 
-class MockHeroesRepository {
-  create = jasmine.createSpy('create');
-}
-
+// ==== Mocks =====
 class MockRouter {
   navigate = jasmine.createSpy('navigate');
 }
 
-describe('HeroesCreateComponent', () => {
-  let component: HeroesCreateComponent;
-  let fixture: ComponentFixture<HeroesCreateComponent>;
-  let mockRepo: MockHeroesRepository;
+class MockMovementsRepository {
+  create = jasmine.createSpy().and.returnValue(of({}));
+}
+
+describe('MovementCreateComponent', () => {
+  let component: MovementCreateComponent;
+  let fixture: ComponentFixture<MovementCreateComponent>;
+  let mockRepo: MockMovementsRepository;
   let mockRouter: MockRouter;
 
   beforeEach(async () => {
-    mockRepo = new MockHeroesRepository();
-    mockRouter = new MockRouter();
-
     await TestBed.configureTestingModule({
-      imports: [HeroesCreateComponent],
+      imports: [MovementCreateComponent], // standalone
       providers: [
-        { provide: HeroesRepository, useValue: mockRepo },
-        { provide: Router, useValue: mockRouter }
+        { provide: MovementsRepository, useClass: MockMovementsRepository },
+        { provide: Router, useClass: MockRouter }
       ]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(HeroesCreateComponent);
+    fixture = TestBed.createComponent(MovementCreateComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    mockRepo = TestBed.inject(MovementsRepository) as unknown as MockMovementsRepository;
+    mockRouter = TestBed.inject(Router) as unknown as MockRouter;
   });
 
-  it('should create', () => {
+  it('debería crearse', () => {
     expect(component).toBeTruthy();
+    expect(component.title).toBe('Registrar Héroe');
   });
 
-  it('should call HeroesRepository.create and navigate on saveForm', () => {
-    const heroForm: HeroForm = {
-      name: 'Thor',
-      power: 'Thunder',
-      universe: 'Marvel',
-      age: 1500
+  it('debería guardar un movimiento tipo RETIRO con amount negativo', () => {
+    const form: MovementForm = {
+      transaction_type: SELECT_TYPE_MOVEMENT.RETIRO,
+      amount: 200,
+      account_id: 1,
+      date: '01/01/2000'
     };
 
-    component.saveForm(heroForm);
+    component.saveForm(form);
 
-    expect(mockRepo.create).toHaveBeenCalled();
-    expect(mockRepo.create).toHaveBeenCalledWith(jasmine.objectContaining({
-      ...heroForm,
-      createdAt: jasmine.any(Number),
-      updatedAt: jasmine.any(Number)
-    }));
+    expect(mockRepo.create).toHaveBeenCalledWith({
+      transaction_type: SELECT_TYPE_MOVEMENT.RETIRO,
+      amount: -200, // debe ser negativo
+      account_id: 1
+    });
+    expect(mockRouter.navigate).toHaveBeenCalledWith(['/movement/list']);
+  });
 
-    expect(mockRouter.navigate).toHaveBeenCalledWith([HEROE_ROUTE_NAMES_GLOBAL.LIST]);
+  it('debería guardar un movimiento tipo DEPOSITO con amount positivo', () => {
+    const form: MovementForm = {
+      transaction_type: 'DEPOSITO',
+      amount: -300, // aunque venga negativo
+      account_id: 2,
+      date: '01/01/2000'
+    };
+
+    component.saveForm(form);
+
+    expect(mockRepo.create).toHaveBeenCalledWith({
+      transaction_type: 'DEPOSITO',
+      amount: 300, // debe corregirse a positivo
+      account_id: 2
+    });
+    expect(mockRouter.navigate).toHaveBeenCalledWith(['/movement/list']);
   });
 });

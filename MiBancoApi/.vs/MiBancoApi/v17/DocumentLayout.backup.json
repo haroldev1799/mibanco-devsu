@@ -3,28 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\api\\infrastructure\\middlewares\\responsemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|solutionrelative:api\\infrastructure\\middlewares\\responsemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|solutionrelative:api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\api\\infrastructure\\filters\\httpglobalexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|solutionrelative:api\\infrastructure\\filters\\httpglobalexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\api\\controllers\\reportecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|solutionrelative:api\\controllers\\reportecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B858544-8D24-4B2C-9AF8-BE2BE2EFF6BD}|ServiciosMiBanco.Infrastructure.Persistence\\ServiciosMiBanco.Infrastructure.Persistence.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciosmibanco.infrastructure.persistence\\migrations\\20250831034118_addstoredprocedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B858544-8D24-4B2C-9AF8-BE2BE2EFF6BD}|ServiciosMiBanco.Infrastructure.Persistence\\ServiciosMiBanco.Infrastructure.Persistence.csproj|solutionrelative:serviciosmibanco.infrastructure.persistence\\migrations\\20250831034118_addstoredprocedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\api\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|solutionrelative:api\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\api\\infrastructure\\filters\\httpglobalexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|solutionrelative:api\\infrastructure\\filters\\httpglobalexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|solutionrelative:api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\commands\\accountcommand\\createaccountcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\commands\\accountcommand\\createaccountcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\api\\controllers\\reportecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|solutionrelative:api\\controllers\\reportecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\queries\\reportqueries\\reportqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\queries\\reportqueries\\reportqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\api\\templates\\report\\report.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|solutionrelative:api\\templates\\report\\report.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C47FB74-9321-4179-B31B-650A1A917D52}|ServiciosMiBanco.Infraestructure.CrossCutting.Utility\\ServiciosMiBanco.Infraestructure.CrossCutting.Utility.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciosmibanco.infraestructure.crosscutting.utility\\extensions\\templateextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C47FB74-9321-4179-B31B-650A1A917D52}|ServiciosMiBanco.Infraestructure.CrossCutting.Utility\\ServiciosMiBanco.Infraestructure.CrossCutting.Utility.csproj|solutionrelative:serviciosmibanco.infraestructure.crosscutting.utility\\extensions\\templateextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0DAF4C80-A124-4BAA-980D-49A7F5629F7C}|ServiciosMiBanco.Infraestructure.CrossCutting.Services\\ServiciosMiBanco.Infraestructure.CrossCutting.Services.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciosmibanco.infraestructure.crosscutting.services\\pdf\\pdfservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DAF4C80-A124-4BAA-980D-49A7F5629F7C}|ServiciosMiBanco.Infraestructure.CrossCutting.Services\\ServiciosMiBanco.Infraestructure.CrossCutting.Services.csproj|solutionrelative:serviciosmibanco.infraestructure.crosscutting.services\\pdf\\pdfservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C47FB74-9321-4179-B31B-650A1A917D52}|ServiciosMiBanco.Infraestructure.CrossCutting.Utility\\ServiciosMiBanco.Infraestructure.CrossCutting.Utility.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciosmibanco.infraestructure.crosscutting.utility\\model\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C47FB74-9321-4179-B31B-650A1A917D52}|ServiciosMiBanco.Infraestructure.CrossCutting.Utility\\ServiciosMiBanco.Infraestructure.CrossCutting.Utility.csproj|solutionrelative:serviciosmibanco.infraestructure.crosscutting.utility\\model\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\queries\\reportqueries\\reportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\queries\\reportqueries\\reportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciomibanco.application\\queries\\movementqueries\\movementqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB0DCB7-CB85-4384-99E6-6532135CBD7A}|ServicioMiBanco.Application\\ServicioMiBanco.Application.csproj|solutionrelative:serviciomibanco.application\\queries\\movementqueries\\movementqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\api\\controllers\\movementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|solutionrelative:api\\controllers\\movementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DAF4C80-A124-4BAA-980D-49A7F5629F7C}|ServiciosMiBanco.Infraestructure.CrossCutting.Services\\ServiciosMiBanco.Infraestructure.CrossCutting.Services.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciosmibanco.infraestructure.crosscutting.services\\serviciosmibanco.infraestructure.crosscutting.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -44,14 +84,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A14B4589-3027-4701-A931-68A05B244011}|ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\ServiciosMiBanco.Infraestructure.CrossCutting.IoC.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciosmibanco.infraestructure.crosscutting.ioc\\autofacmodules\\queriesmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A14B4589-3027-4701-A931-68A05B244011}|ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\ServiciosMiBanco.Infraestructure.CrossCutting.IoC.csproj|solutionrelative:serviciosmibanco.infraestructure.crosscutting.ioc\\autofacmodules\\queriesmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C47FB74-9321-4179-B31B-650A1A917D52}|ServiciosMiBanco.Infraestructure.CrossCutting.Utility\\ServiciosMiBanco.Infraestructure.CrossCutting.Utility.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\serviciosmibanco.infraestructure.crosscutting.utility\\extensions\\templateextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C47FB74-9321-4179-B31B-650A1A917D52}|ServiciosMiBanco.Infraestructure.CrossCutting.Utility\\ServiciosMiBanco.Infraestructure.CrossCutting.Utility.csproj|solutionrelative:serviciosmibanco.infraestructure.crosscutting.utility\\extensions\\templateextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|c:\\users\\user\\source\\repos\\haroldev1799\\mibanco-devsu\\mibancoapi\\api\\templates\\report\\report.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CD59EFE7-3FED-439A-9735-B2CBDE21BC89}|API\\ServicioMiBanco.API.csproj|solutionrelative:api\\templates\\report\\report.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,58 +98,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ResponseMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Infrastructure\\Middlewares\\ResponseMiddleware.cs",
-              "RelativeDocumentMoniker": "API\\Infrastructure\\Middlewares\\ResponseMiddleware.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Infrastructure\\Middlewares\\ResponseMiddleware.cs",
-              "RelativeToolTip": "API\\Infrastructure\\Middlewares\\ResponseMiddleware.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAUwB4AAAANAAAAAAAAAA==",
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-01T06:06:54.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250831034118_AddStoredProcedures.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infrastructure.Persistence\\Migrations\\20250831034118_AddStoredProcedures.cs",
+              "RelativeDocumentMoniker": "ServiciosMiBanco.Infrastructure.Persistence\\Migrations\\20250831034118_AddStoredProcedures.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infrastructure.Persistence\\Migrations\\20250831034118_AddStoredProcedures.cs",
+              "RelativeToolTip": "ServiciosMiBanco.Infrastructure.Persistence\\Migrations\\20250831034118_AddStoredProcedures.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-31T20:41:27.583Z",
+              "WhenOpened": "2025-09-01T06:02:46.85Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ClientController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Controllers\\ClientController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\ClientController.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Controllers\\ClientController.cs",
-              "RelativeToolTip": "API\\Controllers\\ClientController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "API\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwDUAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-31T20:25:07.546Z",
+              "WhenOpened": "2025-09-01T05:53:53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReporteController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Controllers\\ReporteController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\ReporteController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Controllers\\ReporteController.cs",
+              "RelativeToolTip": "API\\Controllers\\ReporteController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwCUAAAB5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T23:58:08.316Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "PdfServices.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infraestructure.CrossCutting.Services\\PDF\\PdfServices.cs",
-              "RelativeDocumentMoniker": "ServiciosMiBanco.Infraestructure.CrossCutting.Services\\PDF\\PdfServices.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infraestructure.CrossCutting.Services\\PDF\\PdfServices.cs",
-              "RelativeToolTip": "ServiciosMiBanco.Infraestructure.CrossCutting.Services\\PDF\\PdfServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Title": "CreateAccountCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\AccountCommand\\CreateAccountCommandHandler.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Commands\\AccountCommand\\CreateAccountCommandHandler.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Commands\\AccountCommand\\CreateAccountCommandHandler.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Commands\\AccountCommand\\CreateAccountCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-31T20:15:13.706Z",
+              "WhenOpened": "2025-08-31T19:31:49.116Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Microsoft.VisualStudio.Docker.Compose.targets",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
-              "ViewState": "AgIAAKcBAAAAAAAAAAAtwLIBAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-08-31T19:46:15.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 17,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Dockerfile",
               "RelativeDocumentMoniker": "API\\Dockerfile",
@@ -130,20 +175,150 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "HttpGlobalExceptionFilter.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Infrastructure\\Filters\\HttpGlobalExceptionFilter.cs",
               "RelativeDocumentMoniker": "API\\Infrastructure\\Filters\\HttpGlobalExceptionFilter.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Infrastructure\\Filters\\HttpGlobalExceptionFilter.cs",
               "RelativeToolTip": "API\\Infrastructure\\Filters\\HttpGlobalExceptionFilter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-31T19:31:49.125Z",
+              "WhenOpened": "2025-08-31T22:47:58.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TemplateExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infraestructure.CrossCutting.Utility\\Extensions\\TemplateExtensions.cs",
+              "RelativeDocumentMoniker": "ServiciosMiBanco.Infraestructure.CrossCutting.Utility\\Extensions\\TemplateExtensions.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infraestructure.CrossCutting.Utility\\Extensions\\TemplateExtensions.cs",
+              "RelativeToolTip": "ServiciosMiBanco.Infraestructure.CrossCutting.Utility\\Extensions\\TemplateExtensions.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T18:58:43.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\ClientController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "API\\Controllers\\ClientController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwD8AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T20:25:07.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Microsoft.VisualStudio.Docker.Compose.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
+              "ViewState": "AgIAAKcBAAAAAAAAAAAtwLIBAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-08-31T19:46:15.386Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "PdfServices.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infraestructure.CrossCutting.Services\\PDF\\PdfServices.cs",
+              "RelativeDocumentMoniker": "ServiciosMiBanco.Infraestructure.CrossCutting.Services\\PDF\\PdfServices.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infraestructure.CrossCutting.Services\\PDF\\PdfServices.cs",
+              "RelativeToolTip": "ServiciosMiBanco.Infraestructure.CrossCutting.Services\\PDF\\PdfServices.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAswBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T00:01:20.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReportQueries.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Queries\\ReportQueries\\ReportQueries.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Queries\\ReportQueries\\ReportQueries.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Queries\\ReportQueries\\ReportQueries.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Queries\\ReportQueries\\ReportQueries.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T22:44:24.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "report.html",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Templates\\Report\\report.html",
+              "RelativeDocumentMoniker": "API\\Templates\\Report\\report.html",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Templates\\Report\\report.html",
+              "RelativeToolTip": "API\\Templates\\Report\\report.html",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-09-01T00:06:01.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Report.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infraestructure.CrossCutting.Utility\\Model\\Report.cs",
+              "RelativeDocumentMoniker": "ServiciosMiBanco.Infraestructure.CrossCutting.Utility\\Model\\Report.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infraestructure.CrossCutting.Utility\\Model\\Report.cs",
+              "RelativeToolTip": "ServiciosMiBanco.Infraestructure.CrossCutting.Utility\\Model\\Report.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T23:25:49.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ReportViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Queries\\ReportQueries\\ReportViewModel.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Queries\\ReportQueries\\ReportViewModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Queries\\ReportQueries\\ReportViewModel.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Queries\\ReportQueries\\ReportViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T23:25:43.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MovementQueries.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Queries\\MovementQueries\\MovementQueries.cs",
+              "RelativeDocumentMoniker": "ServicioMiBanco.Application\\Queries\\MovementQueries\\MovementQueries.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServicioMiBanco.Application\\Queries\\MovementQueries\\MovementQueries.cs",
+              "RelativeToolTip": "ServicioMiBanco.Application\\Queries\\MovementQueries\\MovementQueries.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T22:48:55.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MovementController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Controllers\\MovementController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\MovementController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Controllers\\MovementController.cs",
+              "RelativeToolTip": "API\\Controllers\\MovementController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T20:46:38.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "QueriesModule.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\AutofacModules\\QueriesModule.cs",
               "RelativeDocumentMoniker": "ServiciosMiBanco.Infraestructure.CrossCutting.IoC\\AutofacModules\\QueriesModule.cs",
@@ -156,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 15,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Program.cs",
               "RelativeDocumentMoniker": "API\\Program.cs",
@@ -169,20 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ReporteController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Controllers\\ReporteController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\ReporteController.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Controllers\\ReporteController.cs",
-              "RelativeToolTip": "API\\Controllers\\ReporteController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAswCAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-31T19:21:25.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "ServiciosMiBanco.Infraestructure.CrossCutting.Services",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infraestructure.CrossCutting.Services\\ServiciosMiBanco.Infraestructure.CrossCutting.Services.csproj",
               "RelativeDocumentMoniker": "ServiciosMiBanco.Infraestructure.CrossCutting.Services\\ServiciosMiBanco.Infraestructure.CrossCutting.Services.csproj",
@@ -195,7 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 18,
               "Title": "docker-compose.override.yml",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\docker-compose.override.yml",
               "RelativeDocumentMoniker": "docker-compose.override.yml",
@@ -204,32 +366,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
               "WhenOpened": "2025-08-31T20:00:41.869Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "report.html",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Templates\\Report\\report.html",
-              "RelativeDocumentMoniker": "API\\Templates\\Report\\report.html",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\API\\Templates\\Report\\report.html",
-              "RelativeToolTip": "API\\Templates\\Report\\report.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-08-31T19:21:19.261Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TemplateExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infraestructure.CrossCutting.Utility\\Extensions\\TemplateExtensions.cs",
-              "RelativeDocumentMoniker": "ServiciosMiBanco.Infraestructure.CrossCutting.Utility\\Extensions\\TemplateExtensions.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\haroldev1799\\mibanco-devsu\\MiBancoApi\\ServiciosMiBanco.Infraestructure.CrossCutting.Utility\\Extensions\\TemplateExtensions.cs",
-              "RelativeToolTip": "ServiciosMiBanco.Infraestructure.CrossCutting.Utility\\Extensions\\TemplateExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-31T18:58:43.825Z",
               "EditorCaption": ""
             }
           ]

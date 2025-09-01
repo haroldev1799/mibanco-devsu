@@ -10,6 +10,7 @@
         public decimal daily_limit_amount { get; set; }
         public decimal initial_balance { get; set; }
         public long amount { get; set; }
+        public long movementId { get; set; }
         public DateTime? date { get; set; }
         public string? transaction_type { get; set; }
         public decimal balance { get; set; }

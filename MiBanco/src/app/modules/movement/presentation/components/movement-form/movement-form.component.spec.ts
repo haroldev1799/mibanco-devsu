@@ -1,88 +1,98 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { HeroFormComponent } from './movement-form.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { MovementFormComponent } from './movement-form.component';
 import { Router } from '@angular/router';
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { SnackbarComponent } from '@app/shared/components/atoms/snackbar/snackbar.component';
-import { ModalMessageService } from '@app/shared/services/modal-message.service';
-import { HeroForm } from '@app/modules/heroes/domain/dto/heroes.dto';
-import { MODAL_MESSAGES } from '@app/core/dictionaries/messages/messages-crud';
+import { AccountRepository } from '@app/modules/account/domain/repository/account.repository';
+import { of } from 'rxjs';
+import { MOVEMENT_FORM } from './movement-form.component.constant';
+import { MovementForm } from '@app/modules/movement/domain/dto/movement.dto';
 
-describe('HeroFormComponent', () => {
-  let component: HeroFormComponent;
-  let fixture: ComponentFixture<HeroFormComponent>;
+// ==== Mocks =====
+class MockRouter {
+  navigate = jasmine.createSpy('navigate');
+}
 
-  let mockRouter: jasmine.SpyObj<Router>;
-  let mockSnackBar: jasmine.SpyObj<MatSnackBar>;
-  let mockModal: jasmine.SpyObj<ModalMessageService>;
+class MockAccountRepository {
+  getAll = jasmine.createSpy().and.returnValue(
+    of({ data: [{ id: 1, account_number: '12345' }] })
+  );
+}
+
+describe('MovementFormComponent', () => {
+  let component: MovementFormComponent;
+  let fixture: ComponentFixture<MovementFormComponent>;
+  let mockRouter: MockRouter;
 
   beforeEach(async () => {
-    mockRouter = jasmine.createSpyObj('Router', ['navigate']);
-    mockSnackBar = jasmine.createSpyObj('MatSnackBar', ['openFromComponent']);
-    mockModal = jasmine.createSpyObj('ModalMessageService', ['open']);
-
     await TestBed.configureTestingModule({
-      imports: [HeroFormComponent, ReactiveFormsModule],
+      imports: [MovementFormComponent],
       providers: [
-        { provide: Router, useValue: mockRouter },
-        { provide: MatSnackBar, useValue: mockSnackBar },
-        { provide: ModalMessageService, useValue: mockModal }
+        { provide: Router, useClass: MockRouter },
+        { provide: AccountRepository, useClass: MockAccountRepository }
       ]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(HeroFormComponent);
+    fixture = TestBed.createComponent(MovementFormComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    mockRouter = TestBed.inject(Router) as unknown as MockRouter;
   });
 
-  it('should create the component', () => {
+  it('debería crearse', () => {
     expect(component).toBeTruthy();
-    expect(component.formGroup).toBeDefined();
   });
 
-  it('should patch form values when default input is set', () => {
-    const hero: HeroForm = { name: 'Batman', power: 'Money', universe: 'DC', age: 40 };
-    component.default = hero;
-    component.ngOnChanges({ default: { currentValue: hero, previousValue: null, firstChange: true, isFirstChange: () => true } });
+  it('debería inicializar el formulario y cargar cuentas en _init()', () => {
+    expect(component.formGroup).toBeDefined();
+    expect(component.accountSelect.length).toBe(1);
+    expect(component.accountSelect[0].name).toBe('12345');
+  });
+
+  it('debería navegar al hacer clickBtnCancel()', () => {
+    component.clickBtnCancel();
+    expect(mockRouter.navigate).toHaveBeenCalledWith(['/movement/list']);
+  });
+
+  it('no debería emitir evento si el formulario es inválido en clickBtnSave()', () => {
+    spyOn(component.actionForm, 'emit');
+    component.clickBtnSave();
+    expect(component.actionForm.emit).not.toHaveBeenCalled();
+  });
+
+  it('debería emitir evento si el formulario es válido en clickBtnSave()', () => {
+    spyOn(component.actionForm, 'emit');
+
+    component.formGroup.setValue({
+      [MOVEMENT_FORM.TransactionType]: 'DEBITO',
+      [MOVEMENT_FORM.Amount]: 100,
+      [MOVEMENT_FORM.AccountId]: 1
+    });
+
+    component.clickBtnSave();
+
+    expect(component.actionForm.emit).toHaveBeenCalledWith(component.formGroup.getRawValue());
+  });
+
+  it('debería actualizar valores del formulario en ngOnChanges con default', () => {
+    const defaultValue: MovementForm = {
+      transaction_type: 'CREDITO',
+      amount: 200,
+      account_id: 1,
+      date: '01/01/2001'
+    };
+
+    component.default = defaultValue;
+    component.ngOnChanges({
+      default: {
+        currentValue: defaultValue,
+        previousValue: null,
+        firstChange: true,
+        isFirstChange: () => true
+      }
+    });
 
     expect(component.formGroup.value).toEqual({
-      name: [hero.name],
-      power: [hero.power],
-      universe: [hero.universe],
-      age: [hero.age]
+      [MOVEMENT_FORM.TransactionType]: [defaultValue.transaction_type],
+      [MOVEMENT_FORM.Amount]: [defaultValue.amount],
+      [MOVEMENT_FORM.AccountId]: [defaultValue.account_id]
     });
-  });
-
-  it('should show snackbar when form is invalid on save', () => {
-    component.formGroup.reset();
-    component.clickBtnSave();
-
-    expect(mockSnackBar.openFromComponent).toHaveBeenCalledWith(SnackbarComponent, {
-      duration: 2000,
-      data: { message: 'Por favor completa los campos requeridos' }
-    });
-    expect(mockModal.open).not.toHaveBeenCalled();
-  });
-
-  it('should open modal and emit form value when form is valid on save', () => {
-    spyOn(component.actionForm, 'emit');
-    const heroForm: HeroForm = { name: 'Iron Man', power: 'Armor', universe: 'Marvel', age: 45 };
-    component.formGroup.setValue(heroForm);
-
-    mockModal.open.and.callFake((_data, onConfirm) => onConfirm && onConfirm());
-
-    component.clickBtnSave();
-
-    expect(mockModal.open).toHaveBeenCalledWith(MODAL_MESSAGES.modalConfirmSave, jasmine.any(Function));
-    expect(component.actionForm.emit).toHaveBeenCalledWith(heroForm);
-  });
-
-  it('should open cancel modal and navigate when confirmed', () => {
-    mockModal.open.and.callFake((_data, onConfirm) => onConfirm && onConfirm());
-
-    component.clickBtnCancel();
-
-    expect(mockModal.open).toHaveBeenCalled();
-    expect(mockRouter.navigate).toHaveBeenCalled();
   });
 });

@@ -26,20 +26,20 @@ namespace ServicioMiBanco.API.Controllers
         [Route("GetAll")]
         [ProducesResponseType(typeof(ReportViewModel), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
-        public async Task<IActionResult> GetAll(long clientId)
+        public async Task<IActionResult> GetAll(long? clientId, long? accountId, DateTime? date)
         {
-            var result = await _reportQueries.GetAll(clientId);
+            var result = await _reportQueries.GetAll(clientId, accountId, date, null);
             return Ok(result);
         }
         [HttpPost("GenerarReporte")]
         [Produces("application/pdf")]
         [ProducesResponseType(typeof(FileContentResult), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> GenerarReporte(long clientId)
+        public async Task<IActionResult> GenerarReporte(long? clientId, long? accountId, DateTime? date, long? movementId)
         {
             var path = Path.Combine(_env.ContentRootPath, "Templates", "Report", "report.html");
             var template = System.IO.File.ReadAllText(path);
-            var result = await _reportQueries.GetAll(clientId);
+            var result = await _reportQueries.GetAll(clientId, accountId, date, movementId);
 
             var html = TemplateExtensions.generateReport(template, JsonConvert.SerializeObject(result));
             var pdfBytes = _pdfService.FromHtml(html);

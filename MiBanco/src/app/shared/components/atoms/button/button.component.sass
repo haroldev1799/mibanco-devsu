@@ -1,32 +1,46 @@
 .primary
-    background-color: var(--secondary-50)
-    padding: 20px 25px
-    height: 30px
-    border-radius: 0.25rem
-    font-size: 0.875rem
-    height: 2.5rem
-    min-width: auto
-    width: auto
-    display: flex
-    justify-content: center
-    align-items: center
-    border: none
-    cursor: pointer
+  background-color: var(--text-primary)
+  color: var(--white)
+  padding: 0 1.5rem
+  height: 2.5rem
+  border-radius: 0.25rem
+  font-size: 0.875rem
+  display: flex
+  justify-content: center
+  align-items: center
+  border: none
+  cursor: pointer
+  font-weight: 500
+  transition: background 0.2s ease, transform 0.1s ease
+
+  &:hover
+    background-color: var(--complementary-scooter-500)
+
+  &:active
+    transform: scale(0.97)
+
+  &:disabled
+    background-color: var(--neutral-200)
+    color: var(--neutral-500)
+    cursor: not-allowed
 
 .light
-    background-color: var(--neutral-50)
-    border: 1px solid var(--neutral-50) !important
-    margin-right: 10px
-    color: var(--black)
-    padding: 20px 25px
-    height: 30px
-    border-radius: 0.25rem
-    font-size: 0.875rem
-    height: 2.5rem
-    min-width: auto
-    width: auto
-    display: flex
-    justify-content: center
-    align-items: center
-    border: none
-    cursor: pointer
+  background-color: var(--neutral-50)
+  border: 1px solid var(--neutral-200)
+  color: var(--black)
+  padding: 0 1.5rem
+  height: 2.5rem
+  border-radius: 0.25rem
+  font-size: 0.875rem
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  transition: background 0.2s ease, transform 0.1s ease
+  margin-right: 10px
+
+  &:hover
+    background-color: var(--neutral-100)
+
+  &:active
+    transform: scale(0.97)

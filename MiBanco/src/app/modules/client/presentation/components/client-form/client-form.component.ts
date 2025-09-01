@@ -3,7 +3,6 @@ import { CLIENT_FORM, CLIENT_FORM_IMPORTS } from './client-form.component.consta
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ButtonType } from '@app/shared/components/atoms/button/button.interface';
 import { Router } from '@angular/router';
-import { ModalMessageService } from '@app/shared/services/modal-message.service';
 import { CLIENT_ROUTE_NAMES_GLOBAL } from '@app/modules/client/client.routenames';
 import { Client } from '@app/modules/client/domain/dto/client.dto';
 
@@ -24,7 +23,6 @@ export class ClientFormComponent implements OnChanges {
 	readonly CLIENT_FORM = CLIENT_FORM;
   readonly buttonType = ButtonType;
 	private router = inject(Router);
-  private modalService = inject(ModalMessageService);
 
   formGroup!: FormGroup;
   actions_class = 'flex justify-content-end p-3';

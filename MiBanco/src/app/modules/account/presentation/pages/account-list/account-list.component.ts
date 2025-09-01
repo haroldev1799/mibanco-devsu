@@ -31,7 +31,6 @@ export class AccountListComponent  {
     this.heroesRepository.getAll().subscribe({
       next:(result: ListAccountResponse) => {
         this.dataSource = [...result.data];
-        console.log(result.data)
       },
     });
   }

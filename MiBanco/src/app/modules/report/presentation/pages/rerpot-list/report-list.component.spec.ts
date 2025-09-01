@@ -1,77 +1,96 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { of } from 'rxjs';
-import { HeroesListComponent } from './report-list.component';
-import { HeroesRepository } from '@app/modules/heroes/domain/repository/heroes.repository';
-import { Router } from '@angular/router';
-import { LoaderService } from '@app/shared/services/loader.service';
-import { ModalMessageService } from '@app/shared/services/modal-message.service';
-import { OPTIONS_CODE } from '@app/core/enums/options.enum';
-import { MODAL_MESSAGES } from '@app/core/dictionaries/messages/messages-crud';
+import { ReportListComponent } from './report-list.component';
+import { ReportRepository } from '@app/modules/report/domain/repository/report.repository';
+import { ClientRepository } from '@app/modules/client/domain/repository/client.repository';
+import { AccountRepository } from '@app/modules/account/domain/repository/account.repository';
+import { FormBuilder } from '@angular/forms';
+import { of, throwError } from 'rxjs';
 
-describe('HeroesListComponent', () => {
-  let component: HeroesListComponent;
-  let fixture: ComponentFixture<HeroesListComponent>;
-  let mockRepo: any;
-  let mockRouter: any;
-  let mockLoader: any;
-  let mockModal: any;
+// ==== Mocks =====
+class MockReportRepository {
+  getAll = jasmine.createSpy().and.returnValue(of({ data: [{ id: 1, name: 'Reporte 1' }] } as any));
+  generateReport = jasmine.createSpy().and.returnValue(of(new Blob(['mock'], { type: 'application/pdf' })));
+}
+
+class MockClientRepository {
+  getAll = jasmine.createSpy().and.returnValue(of({ data: [{ id: 1, name: 'Cliente X' }] }));
+}
+
+class MockAccountRepository {
+  getAll = jasmine.createSpy().and.returnValue(of({ data: [{ id: 2, account_number: '12345' }] }));
+}
+
+describe('ReportListComponent', () => {
+  let component: ReportListComponent;
+  let fixture: ComponentFixture<ReportListComponent>;
+  let mockReportRepo: MockReportRepository;
 
   beforeEach(async () => {
-    mockRepo = {
-      getAll: jasmine.createSpy('getAll').and.returnValue(of({ data: [], message: 'ok', success: true, status: 200 })),
-      delete: jasmine.createSpy('delete').and.returnValue(of({ data: '1', message: 'ok', success: true, status: 200 }))
-    };
-    mockRouter = jasmine.createSpyObj('Router', ['navigate']);
-    mockLoader = jasmine.createSpyObj('LoaderService', ['show', 'hide']);
-    mockModal = jasmine.createSpyObj('ModalMessageService', ['open']);
-
     await TestBed.configureTestingModule({
-      imports: [HeroesListComponent],
+      imports: [ReportListComponent], // Standalone
       providers: [
-        { provide: HeroesRepository, useValue: mockRepo },
-        { provide: Router, useValue: mockRouter },
-        { provide: LoaderService, useValue: mockLoader },
-        { provide: ModalMessageService, useValue: mockModal }
+        { provide: ReportRepository, useClass: MockReportRepository },
+        { provide: ClientRepository, useClass: MockClientRepository },
+        { provide: AccountRepository, useClass: MockAccountRepository },
+        FormBuilder
       ]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(HeroesListComponent);
+    fixture = TestBed.createComponent(ReportListComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    mockReportRepo = TestBed.inject(ReportRepository) as unknown as MockReportRepository;
   });
 
-  it('should create', () => {
+  it('debería crearse', () => {
     expect(component).toBeTruthy();
-    expect(mockLoader.show).toHaveBeenCalled();
-    expect(mockRepo.getAll).toHaveBeenCalled();
-    expect(mockLoader.hide).toHaveBeenCalled();
   });
 
-  it('should navigate to create on goCreate()', () => {
-    component.goCreate();
-    expect(mockRouter.navigate).toHaveBeenCalledWith(['heroe/crear']);
+  it('debería inicializar ngOnInit y cargar data', () => {
+    component.ngOnInit();
+    expect(mockReportRepo.getAll).toHaveBeenCalled();
+    expect(component.dataSource.length).toBe(1);
+    expect(component.optionsClient[0].name).toBe('Cliente X');
+    expect(component.optionsAccount[0].name).toBe('12345');
   });
 
-  it('should call router.navigate on EDIT option', () => {
-    const hero = { id: '123', name: 'Thor' } as any;
-    component.handleOption(OPTIONS_CODE.EDIT, hero);
-    expect(mockRouter.navigate).toHaveBeenCalledWith(['heroe/editar/123']);
+  it('debería ejecutar search() y asignar dataSource', () => {
+    component.ngOnInit();
+    component.search();
+    expect(mockReportRepo.getAll).toHaveBeenCalled();
+    expect(component.dataSource.length).toBe(1);
   });
 
-  it('should call modalService.open on DELETE option', () => {
-    const hero = { id: '123', name: 'Thor' } as any;
-    component.handleOption(OPTIONS_CODE.DELETE, hero);
-    expect(mockModal.open).toHaveBeenCalledWith(MODAL_MESSAGES.modalDelete, jasmine.any(Function));
+  it('debería limpiar filtros con cleanFilter()', () => {
+    component.ngOnInit();
+    component.formGroup.patchValue({ client_id: 1, account_id: 2, date: new Date() });
+
+    component.cleanFilter();
+
+    expect(component.formGroup.value).toEqual({ client_id: null, account_id: null, date: null });
+    expect(mockReportRepo.getAll).toHaveBeenCalled();
   });
 
-  it('should call delete and refresh list on _delete()', () => {
-    spyOn(component as any, 'ngOnInit').and.callThrough();
+  it('debería generar reporte con download()', () => {
+    spyOn(document, 'createElement').and.callFake(() => {
+      return {
+        href: '',
+        download: '',
+        click: jasmine.createSpy('click')
+      } as unknown as HTMLAnchorElement;
+    });
 
-    (component as any)._delete('123');
+    component.ngOnInit();
+    component.download(1);
 
-    expect(mockLoader.show).toHaveBeenCalled();
-    expect(mockRepo.delete).toHaveBeenCalledWith('123');
-    expect((component as any).ngOnInit).toHaveBeenCalled();
-    expect(mockLoader.hide).toHaveBeenCalled();
+    expect(mockReportRepo.generateReport).toHaveBeenCalledWith(null, null, null, 1);
+  });
+
+  it('debería manejar error en search()', () => {
+    mockReportRepo.getAll = jasmine.createSpy().and.returnValue(throwError(() => new Error('Error')));
+    spyOn(console, 'error');
+
+    component.search();
+
+    expect(console.error).toHaveBeenCalled();
   });
 });

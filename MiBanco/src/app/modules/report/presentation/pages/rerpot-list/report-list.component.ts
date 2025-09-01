@@ -44,7 +44,7 @@ export class ReportListComponent {
   btnData: ButtonData = {
     img: 'download.svg',
     style: {
-      width: '35px'
+      width: '25px'
     }
   };
 
@@ -68,7 +68,6 @@ export class ReportListComponent {
     this.reportRepository.getAll().subscribe({
       next:(result: ReportResponse) => {
         this.dataSource = [...result.data];
-        console.log(this.dataSource, ' ss')
       },
     });
     this.formGroup = this.fb.group({
@@ -78,8 +77,9 @@ export class ReportListComponent {
 		});
   }
 
-  download(){
-    this.reportRepository.generateReport('').subscribe({
+  download(movementId?: number){
+    const filter = this.formGroup.getRawValue();
+    this.reportRepository.generateReport(filter.client_id, filter.account_id, filter.date, movementId).subscribe({
       next: (result: Blob) => {
         const url = window.URL.createObjectURL(result);
 
@@ -93,6 +93,25 @@ export class ReportListComponent {
       error: (err) => {
         console.error('Error al generar reporte', err);
       }
+    });
+  }
+
+  cleanFilter(){
+    this.formGroup.reset();
+    this.formGroup.updateValueAndValidity();
+    this.reportRepository.getAll().subscribe({
+      next:(result: ReportResponse) => {
+        this.dataSource = [...result.data];
+      },
+    });
+  }
+
+  search(){
+    const filter = this.formGroup.getRawValue();
+    this.reportRepository.getAll(filter.client_id, filter.account_id, filter.date).subscribe({
+      next:(result: ReportResponse) => {
+        this.dataSource = [...result.data];
+      },
     });
   }
 
